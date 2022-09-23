@@ -612,12 +612,12 @@ body::-webkit-scrollbar-thumb {
 /*Items*/
 .notion-dropdown__option {
   background: var(--inc-medium);
-  margin-right: 15px; /* ← Separation between items*/
+  margin-right: 15px !important; /* ← Separation between items*/
   border: 0px solid white;
-  border-radius: 100px;
-  padding: 30px;
-  color: var(--inc-gray); /* ← Text color*/
-  font-weight: bold;
+  border-radius: 100px !important;
+  padding: 14px 20px !important;  /* ← Categories Button size*/
+  color: var(--inc-gray) !important; /* ← Text color*/
+  font-weight: bold !important;
   opacity: 100% !important;
 }
 
