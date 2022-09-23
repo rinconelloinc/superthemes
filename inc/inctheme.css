@@ -615,7 +615,7 @@ body::-webkit-scrollbar-thumb {
   margin-right: 15px; /* ← Separation between items*/
   border: 0px solid white;
   border-radius: 100px;
-  padding: 15px;
+  padding: 30px;
   color: var(--inc-gray); /* ← Text color*/
   font-weight: bold;
   opacity: 100% !important;
