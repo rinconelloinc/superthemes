@@ -631,15 +631,15 @@ body::-webkit-scrollbar-thumb {
 
 .notion-dropdown__option:hover {
   transition: 0.2s ease-in-out;
-  color: var(--inc-main);
-  background: #1c1c1c;
-  opacity: 100%;
+  color: var(--inc-main) !important;
+  background: var(--inc-dark) !important;
+  opacity: 100% !important;
 }
 
 .notion-dropdown__option.active-filter {
-    background: #1c1c1c;
-    color: var(--inc-main);
-    opacity: 100%;
+    background: var(--inc-dark) !important;
+    color: var(--inc-main) !important;
+    opacity: 100% !important;
 }
 
 
