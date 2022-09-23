@@ -632,7 +632,7 @@ body::-webkit-scrollbar-thumb {
 .notion-dropdown__option:hover {
   transition: 0.2s ease-in-out;
   color: var(--inc-main) !important;
-  background: var(--inc-dark) !important;
+  background-color: var(--inc-dark) !important;
   opacity: 100% !important;
 }
 
