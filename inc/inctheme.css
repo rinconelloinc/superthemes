@@ -3,7 +3,7 @@ Project: inc_template
 Author: Luis Rincon - rinconelloinc
 Notion / Super Website Template
 Created: Sep 21, 2022
-Updated: 
+Updated: Sep 23, 2022
 */
 
 
@@ -241,7 +241,7 @@ body::-webkit-scrollbar-thumb {
 \*------------------------------------*/
 
 .notion-divider {
-  opacity: 15% !important;
+  opacity: 20% !important;
 }
 
 
@@ -349,6 +349,116 @@ body::-webkit-scrollbar-thumb {
 /*Align items together (Copy + Image)*/
 .notion-column-list {
   align-items: center !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+   Button
+\*------------------------------------*/
+
+/*Main + Hover*/
+.notion-text__content .notion-link {
+  background: none;
+  border: 2.5px solid var(--inc-main) !important;
+  padding: 5px 25px 6px 25px; /*Top-Left-Down-Right*/
+  margin-top: 10px;
+  display: inline-block;
+  border-radius: 100px;
+  font-size: 13pt;
+  opacity: 100% !important;
+}
+
+.notion-text__content .notion-link:hover {
+   opacity: 100% !important;
+   transition: 0.2s ease-in-out !important;
+   background: var(--inc-main) !important;
+   color: var(--inc-dark);
+}
+
+
+.notion-text__content .notion-link:hover .color-yellow {
+   color: var(--inc-dark) !important;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+   CTA (Yellow)
+\*------------------------------------*/
+
+
+.bg-yellow-light {
+  text-align: center !important;
+  color: var(--inc-dark);
+}
+
+/*Distribute elements horizontally*/
+.bg-yellow-light .notion-callout__content > * {
+  display: inline-block !important;
+  padding: 30px !important;
+  margin-left: 0px; /*← Space between text & button */
+}
+
+
+/*Hide Callout ID*/
+.bg-yellow-light .notion-callout__content
+  > .notion-semantic-string {
+  display: none !important;
+}
+
+
+/*-------------------------------------*/
+
+/*Button (yellow blocks)*/
+
+/*Main + Hover*/
+.bg-yellow-light .notion-text__content .notion-link {
+  background: var(--inc-medium);
+  border: 3px solid var(--inc-medium) !important;
+  padding: 5px 25px 6px 25px; /*Top-Left-Down-Right*/
+  display: inline-block;
+  border-radius: 100px;
+  font-size: 13pt;
+  opacity: 100% !important;
+  color: var(--inc-main);
+}
+
+.bg-yellow-light .notion-text__content .notion-link:hover {
+   opacity: 100% !important;
+   border: 3px solid var(--inc-medium) !important;
+   transition: 0.2s ease-in-out !important;
+   background: var(--inc-main) !important;
+   color: var(--inc-dark);
+}
+
+
+
+
+
+
+/*------------------------------------*\
+   Bookmark
+\*------------------------------------*/
+
+
+.notion-bookmark {
+  overflow: hidden !important;
+  background-color: var(--inc-black) !important;
+  border: 3px solid var(--inc-medium) !important;
+  border-radius: 20px !important;
+  color: var(--inc-white) !important;
+}
+.notion-bookmark:hover {
+  border: 3px solid var(--inc-medium) !important;
+  background-color: var(--inc-dark) !important;
 }
 
 
@@ -534,9 +644,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/***CATEGORIES*************************\
-
-
 /*Hide the header title */
 .notion-collection__header-wrapper h3,
 .notion-dropdown__button {
@@ -641,14 +748,96 @@ body::-webkit-scrollbar-thumb {
 
 
 
+
+
+
+/*------------------------------------*\
+   Footer
+\*------------------------------------*/
+
+/*Resize width*/
+.super-footer.floating {
+  width: 1300px !important;
+  margin: auto !important;
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+
+
+/*Separate icons*/
+.super-footer__icons .notion-link {
+  padding-left: 40px !important;
+}
+
+
+/*Recolor icons*/
+.super-footer__icons .notion-link:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--inc-main) !important;
+}
+
+
+
+
+
+
+
+
+
+
 /*-------------------------------------*/
 /*-------------------------------------*/
 /*-------------------------------------*/
 
 
-/*Responsive*/
-@media only screen and (max-width: 600px) {
 
+
+/*************************************************************
+   RESPONSIVE - Mobile
+*************************************************************/
+@media (max-width: 680px) {
+  
+  
+
+/*------------------------------------*\
+   Global Components
+\*------------------------------------*/
+
+/* Font sizes*/  
+  h1.notion-heading { font-size: 28pt !important; }
+  h2.notion-heading { font-size: 23pt !important; }
+  h3.notion-heading { font-size: 16pt !important; }
+  .notion-text { font-size: 12pt !important; }
+
+
+/*-------------------------------------*/
+
+
+/*CTA*/
+.notion-callout.bg-yellow-light {
+  width: 90% !important;
+  margin-bottom: -6% !important;
+}
+
+
+/*Reduce padding and margins*/
+.bg-yellow-light .notion-callout__content > * {
+  padding: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/*Reduce space between copy ^ button*/
+.bg-yellow-light .notion-text__content .notion-link {
+  margin-top: -20px !important;
+}
+
+
+   
+   
+/*------------------------------------*\
+   Gallery (Large)
+\*------------------------------------*/ 
 
 /*Make the menu hide on first load*/
 .notion-dropdown__menu.initial-state {
@@ -757,8 +946,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
 /*Menu animation*/
 .notion-dropdown__menu.animate-in {
     animation: dropdown-animation-in .12s ease forwards ;
@@ -798,116 +985,137 @@ body::-webkit-scrollbar-thumb {
 .notion-dropdown__option:hover {
   transition: 0.2s ease-in-out;
   color: var(--inc-main);
-  background: #1c1c1c;
+  background: var(--inc-dark);
   opacity: 100%;
 }
 
 
 .notion-dropdown__option.active-filter {
-    background: #1c1c1c;
+    background: var(--inc-dark);
     color: var(--inc-main);
     opacity: 100%;
 }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
+   
+   
+  
 
 /*------------------------------------*\
-   Bookmark
+   FOOTER
 \*------------------------------------*/
 
-
-.notion-bookmark {
-  overflow: hidden !important;
-  background-color: var(--inc-black) !important;
-  border: 3px solid var(--inc-medium) !important;
-  border-radius: 20px !important;
-  color: var(--inc-white) !important;
-}
-.notion-bookmark:hover {
-  border: 3px solid var(--inc-medium) !important;
-  background-color: var(--inc-dark) !important;
-}
-
-
-
-
-
-
-
-/*------------------------------------*\
-   Button
-\*------------------------------------*/
-
-/*Main + Hover*/
-.notion-text__content .notion-link {
-  background: none;
-  border: 2.5px solid var(--inc-main) !important;
-  padding: 5px 25px 6px 25px; /*Top-Left-Down-Right*/
-  margin-top: 10px;
-  display: inline-block;
-  border-radius: 100px;
-  font-size: 13pt;
-  opacity: 100% !important;
-}
-
-.notion-text__content .notion-link:hover {
-   opacity: 100% !important;
-   transition: 0.2s ease-in-out !important;
-   background: var(--inc-main) !important;
-   color: var(--inc-dark);
-}
-
-
-.notion-text__content .notion-link:hover .color-yellow {
-   color: var(--inc-dark) !important;
-}
-
-
-
-
-
-
-
-/*------------------------------------*\
-   Footer
-\*------------------------------------*/
 
 /*Resize width*/
 .super-footer.floating {
-  width: 1300px !important;
-  margin: auto !important;
-  margin-top: 100px !important;
-  margin-bottom: 100px !important;
+  text-align: center !important;
+  width: 90% !important;
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
 }
 
 
+/*Center Logo*/
+.super-footer__logo {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
 
-/*Separate icons*/
+
+/*Left space of every icon*/
 .super-footer__icons .notion-link {
-  padding-left: 40px !important;
-}
-
-
-/*Recolor icons*/
-.super-footer__icons .notion-link:hover {
-  transition: 0.2s ease-in-out;
-  color: var(--inc-main) !important;
+  padding-left: 14% !important;
 }
 
 
 
+} /* ← END OF RESPONSIVE (Mobile): Do not delete */
 
+
+
+
+
+
+
+
+
+/*************************************************************
+   RESPONSIVE - Tablet
+*************************************************************/
+@media (min-width: 681px) and (max-width: 1000px) {
+  
+  
+/*------------------------------------*\
+   Global Components
+\*------------------------------------*/
+  
+  
+/* Font sizes*/  
+  h1.notion-heading { font-size: 28pt !important; }
+  h2.notion-heading { font-size: 23pt !important; }
+  h3.notion-heading { font-size: 16pt !important; }
+  .notion-text { font-size: 12pt !important; }
+
+
+/*Center content + images horizontally*/
+.notion-column-list {
+  align-items: center !important;
+}
+
+
+
+/*-------------------------------------*/
+
+
+/*CTA*/
+.notion-callout.bg-yellow-light {
+  width: 90% !important;
+  margin-bottom: -6% !important;
+}
+
+
+/*Reduce padding and margins*/
+.bg-yellow-light .notion-callout__content > * {
+  padding: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/*Reduce space between copy ^ button*/
+.bg-yellow-light .notion-text__content .notion-link {
+  margin-top: -20px !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+   FOOTER
+\*------------------------------------*/
+
+
+/*Resize width*/
+.super-footer.floating {
+  text-align: center !important;
+  width: 90% !important;
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
+}
+
+
+/*Center Logo*/
+.super-footer__logo {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+
+/*Left space of every icon*/
+.super-footer__icons .notion-link {
+  padding-left: 14% !important;
+}
+
+
+
+
+
+} /* ← END OF RESPONSIVE (Tablet): Do not delete */
 
