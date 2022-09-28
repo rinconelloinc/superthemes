@@ -3,7 +3,7 @@ Project: inc_template
 Author: Luis Rincon @rinconelloinc
 Notion / Super Website Template
 Created: Sep 21, 2022
-Updated: Sep 23, 2022
+Updated: Sep 27, 2022
 */
 
 
@@ -48,7 +48,9 @@ Updated: Sep 23, 2022
   /*Blocks backgrounds*/
   --color-bg-gray-light: var(--inc-medium) !important;
   --color-bg-yellow-light: var(--inc-main) !important;
+  /*------------------------------------*/
   --color-bg-purple-light: var(--inc-black) !important;
+  --color-bg-brown-light: var(--inc-main) !important;
   
   
   /*Property pill background*/
@@ -64,31 +66,11 @@ Updated: Sep 23, 2022
 
 
 
-
-
-
 /*Recolor text on brand color backgrounds*/
 .bg-yellow, .bg-yellow-light {
   color: var(--inc-black) !important;
 }
 
-
-
-/*Image hovering on Yellow Backgrounds*/
-.bg-yellow, .bg-yellow-light .notion-image:hover {
-  transition: 0.2s ease-in-out !important;
-  opacity: 60%;
-}
-
-
-/*CTA Icons customization*/
-.notion-callout.bg-yellow-light {
-  z-index: 9;
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-  margin-bottom: -90px !important;
-  width: 1200px;
-}
 
 
 
@@ -354,6 +336,99 @@ body::-webkit-scrollbar-thumb {
 
 
 
+/*------------------------------------*\
+   Callouts (Yellow Background)
+\*------------------------------------*/
+
+/*Button*/
+
+/*Main + Hover*/
+.bg-yellow-light .notion-text__content .notion-link {
+  background: var(--inc-medium) !important;
+  border: 3px solid var(--inc-medium) !important;
+  padding: 5px 25px 6px 25px !important; /*Top-Left-Down-Right*/
+  display: inline-block !important;
+  border-radius: 100px !important;
+  font-size: 13pt !important;
+  opacity: 100% !important;
+  color: var(--inc-main) !important;
+}
+
+.bg-yellow-light .notion-text__content .notion-link:hover {
+   opacity: 100% !important;
+   border: 3px solid var(--inc-medium) !important;
+   transition: 0.2s ease-in-out !important;
+   background: var(--inc-main) !important;
+   color: var(--inc-dark) !important;
+}
+
+
+
+/*------------------------------------*\
+   Callouts (Brown = Yellow Background)
+\*------------------------------------*/
+
+/*Recolor & Alignment*/
+.bg-brown, .bg-brown-light {
+  color: var(--inc-black) !important;
+  text-align: center !important;
+}
+
+/*Resizing & Paddings*/
+.notion-callout.bg-brown-light {
+  z-index: 9 !important;
+  margin-bottom: -90px !important; /*← Overlap */
+  width: 1200px !important; /*← Callout width */
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+
+/*Distribute elements horizontally*/
+.bg-brown-light .notion-callout__content > * {
+  display: inline-block !important;
+  padding: 30px !important;
+  margin-left: 0px !important; /*← Space between text & button */
+}
+
+
+/*Hide Callout ID*/
+.bg-brown-light .notion-callout__content
+  > .notion-semantic-string {
+  display: none !important;
+}
+
+
+/*-------------------------------------*/
+
+/*Button*/
+
+/*Main + Hover*/
+.bg-brown-light .notion-text__content .notion-link {
+  background: var(--inc-medium);
+  border: 3px solid var(--inc-medium) !important;
+  padding: 5px 25px 6px 25px !important; /*Top-Left-Down-Right*/
+  display: inline-block !important;
+  border-radius: 100px !important;
+  font-size: 13pt !important;
+  opacity: 100% !important;
+  color: var(--inc-main);
+}
+
+.bg-brown-light .notion-text__content .notion-link:hover {
+   opacity: 100% !important;
+   border: 3px solid var(--inc-medium) !important;
+   transition: 0.2s ease-in-out !important;
+   background: var(--inc-main) !important;
+   color: var(--inc-dark) !important;
+}
+
+
+
+
+
+
+
 
 /*------------------------------------*\
    Button
@@ -382,64 +457,6 @@ body::-webkit-scrollbar-thumb {
 .notion-text__content .notion-link:hover .color-yellow {
    color: var(--inc-dark) !important;
 }
-
-
-
-
-
-
-
-
-/*------------------------------------*\
-   CTA (Yellow)
-\*------------------------------------*/
-
-
-.bg-yellow-light {
-  text-align: center !important;
-  color: var(--inc-dark);
-}
-
-/*Distribute elements horizontally*/
-.bg-yellow-light .notion-callout__content > * {
-  display: inline-block !important;
-  padding: 30px !important;
-  margin-left: 0px; /*← Space between text & button */
-}
-
-
-/*Hide Callout ID*/
-.bg-yellow-light .notion-callout__content
-  > .notion-semantic-string {
-  display: none !important;
-}
-
-
-/*-------------------------------------*/
-
-/*Button (yellow blocks)*/
-
-/*Main + Hover*/
-.bg-yellow-light .notion-text__content .notion-link {
-  background: var(--inc-medium);
-  border: 3px solid var(--inc-medium) !important;
-  padding: 5px 25px 6px 25px; /*Top-Left-Down-Right*/
-  display: inline-block;
-  border-radius: 100px;
-  font-size: 13pt;
-  opacity: 100% !important;
-  color: var(--inc-main);
-}
-
-.bg-yellow-light .notion-text__content .notion-link:hover {
-   opacity: 100% !important;
-   border: 3px solid var(--inc-medium) !important;
-   transition: 0.2s ease-in-out !important;
-   background: var(--inc-main) !important;
-   color: var(--inc-dark);
-}
-
-
 
 
 
@@ -814,7 +831,7 @@ body::-webkit-scrollbar-thumb {
 /*-------------------------------------*/
 
 
-/*CTA*/
+/*Callout (Yellow Background)*/
 .notion-callout.bg-yellow-light {
   width: 90% !important;
   margin-bottom: -6% !important;
@@ -832,8 +849,32 @@ body::-webkit-scrollbar-thumb {
   margin-top: -20px !important;
 }
 
-
    
+/*-------------------------------------*/
+   
+
+/*Callout (Brown = Yellow Background)*/
+.notion-callout.bg-brown-light {
+  width: 90% !important;
+  margin-bottom: -6% !important;
+}
+
+
+/*Reduce padding and margins*/
+.bg-brown-light .notion-callout__content > * {
+  padding: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/*Reduce space between copy ^ button*/
+.bg-brown-light .notion-text__content .notion-link {
+  margin-top: -20px !important;
+}
+   
+   
+   
+   
+
    
 /*------------------------------------*\
    Gallery (Large)
@@ -1064,8 +1105,8 @@ body::-webkit-scrollbar-thumb {
 
 /*-------------------------------------*/
 
-
-/*CTA*/
+   
+/*Callout (Yellow Background)*/
 .notion-callout.bg-yellow-light {
   width: 90% !important;
   margin-bottom: -6% !important;
@@ -1083,8 +1124,30 @@ body::-webkit-scrollbar-thumb {
   margin-top: -20px !important;
 }
 
+   
+/*-------------------------------------*/
+   
+
+/*Callout (Brown = Yellow Background)*/
+.notion-callout.bg-brown-light {
+  width: 90% !important;
+  margin-bottom: -6% !important;
+}
 
 
+/*Reduce padding and margins*/
+.bg-brown-light .notion-callout__content > * {
+  padding: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/*Reduce space between copy ^ button*/
+.bg-brown-light .notion-text__content .notion-link {
+  margin-top: -20px !important;
+}
+   
+   
+   
 
 
 /*------------------------------------*\
