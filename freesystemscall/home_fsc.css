@@ -1,0 +1,562 @@
+
+/*------------------------------------*\
+   Gloabl Customizations
+\*------------------------------------*/
+
+
+/*Text Align*/
+#block-ec69c7effb884449952751b525679989 {
+  text-align: center !important;
+}
+
+/*Align items together (Copy + Image)*/
+.notion-column-list {
+  align-items: center;
+}
+
+
+
+
+
+/*------------------------------------*\
+   Section: Hero
+\*------------------------------------*/
+
+
+/*Main customization*/
+#block-d221015b3b4449448c15e5f05be4c18e {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F25e1e05b-9478-4703-8def-af0c99614dd0%2F1._Main_Circles.png?table=block&id=55a85c69-5faf-4118-a894-4a6bf94f0049&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+/*Remove Logo border Radius*/
+#block-d221015b3b4449448c15e5f05be4c18e .notion-image.normal img {
+  border-radius: 0px !important;
+}
+
+
+
+/*Heading 1*/
+#block-0c5f2d2123e34c91973921e44def4452 {
+  color: var(--ema-white) !important;
+  margin-top: 0px !important;
+  font-size: 40pt !important;
+}
+
+
+
+
+/*Video Animation*/
+#block-254790760d7d4d2baa165f5370a28556 {
+  animation-name: pulse;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0, 0);
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
+
+/*------------------------------------*\
+   Section: Starting anything
+\*------------------------------------*/
+
+/*Background Image*/
+#block-b1bc96d5ff544a5bacf1f1e0a1d3a184 {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffebb681e-1979-482a-ba2d-5ea6916dba43%2F2._People1.png?table=block&id=0de9dd0a-6aed-4bab-99d3-de0c2f38785e&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+
+/*Content width size*/
+#block-16bb72939e8846f8bb82e493e93b341a {
+  width: 795px !important;
+}
+
+
+/*------------------------------------*/
+
+
+/*ITEMS*/
+/*Spacing & Distribution*/
+#block-16bb72939e8846f8bb82e493e93b341a .notion-callout {
+  padding: 20px !important;
+  margin-bottom: -40px !important;
+  text-align: left !important;
+}
+
+
+/*HOVER - Item Icons*/
+#block-16bb72939e8846f8bb82e493e93b341a .notion-image:hover {
+  transition: 0.2s ease-in-out;
+  transform: translate(5px,0px) scale(1.2);
+}
+
+
+
+
+
+/*------------------------------------*\
+   Section: Struggles
+\*------------------------------------*/
+
+/*Inner callout customization*/
+#block-dc7aba08bbd8486dafbcc82dd0d5f910 {
+  border-radius: 20px !important;
+  color:var(--ema-white) !important;
+  padding: 60px !important;
+}
+
+/*H3 customization*/
+#block-dc7aba08bbd8486dafbcc82dd0d5f910 h3.notion-heading {
+  font-size: 14pt !important;
+  margin-top: 0px !important;
+}
+
+/*Individual cards*/
+#block-dc7aba08bbd8486dafbcc82dd0d5f910 .notion-callout {
+  background: var(--ema-white) !important;
+  border-radius: 10px !important;
+  color: var(--ema-dark) !important;
+  transition: 0.2s ease-in-out;
+}
+
+/*HOVER - Individual Cards (Glow) */
+#block-dc7aba08bbd8486dafbcc82dd0d5f910 .notion-callout:hover {
+  transform: translate(0,0px) scale(0.95); /*Scale = size*/
+  box-shadow: 0px 0px 25px 10px var(--ema-secondary) !important; 10%);
+  /*Change 15px for glow size & var for color*/
+  position: relative !important;
+}
+
+/*HOVER - Show Glow without cropping */
+#block-dc7aba08bbd8486dafbcc82dd0d5f910 .notion-callout__content {
+  overflow: visible !important;
+}
+
+/*Emoji hovering - Where is the file*/
+#block-86ddd9f220d340f1815907ddcc716d3c:hover {
+  cursor: url(https://www.freesystemscall.com/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2F717ead88-013e-432a-bdae-c3b02841d898%2Fimages%2Fb6f4a106-3b24-4204-a2c5-232a843b9a7b.png&w=640&q=80), auto !important;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+   Section: Premise
+\*------------------------------------*/
+
+/*Background Image*/
+#block-9355405aa994473196a9613ec5cf72c3 {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb35f9a17-34f0-40c5-8786-e0b95cb67aeb%2F3._Medium_Circles.png?table=block&id=3e89b9db-7d5d-4c22-8f4f-ceb188de8b3f&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/*Recolor text*/
+#block-9355405aa994473196a9613ec5cf72c3 {
+  color: var(--ema-white) !important;
+}
+
+
+/*Items callout width size*/
+#block-41ba2e3034e543ba8b2e84c2e8c5e4ac {
+  width: 85% !important;
+}
+
+/*Individual item cards*/
+#block-41ba2e3034e543ba8b2e84c2e8c5e4ac .notion-callout {
+  background: var(--ema-medium) !important;
+  height: 200px !important;
+  border: 2px solid var(--ema-light) !important;
+  border-radius: 20px !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+/*HOVER - Individual item cards*/
+#block-41ba2e3034e543ba8b2e84c2e8c5e4ac .notion-callout:hover {
+
+  border: 4px solid var(--ema-secondary) !important;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+   Section: Message
+\*------------------------------------*/
+
+/*Background Image*/
+#block-7db24b03f2674e769b55aeb23382c635 {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7c2e9185-2da7-41b9-aadf-c47872a14699%2FPattern_Main.png?table=block&id=30dacaf1-495b-40f3-88f0-685d434d9a4a&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+/*Text color*/
+#block-7db24b03f2674e769b55aeb23382c635 {
+   color: var(--ema-light) !important;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+   Section: 6P
+\*------------------------------------*/
+
+/*Background Image*/
+#block-7d35235a2d1b4b15beab0ff02edb75ec {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff2e00421-f13b-441d-8bad-b7922ac2b6e8%2F4._Papers.png?table=block&id=8ad791a0-6b41-453a-933e-3d85d8abeb32&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+
+/*We call it the 6P Playbook*/
+#block-a04f861a2aa44995b0609a2beffb82e6.notion-callout {
+  border-radius: 20px !important;
+  width: 45% !important;
+}
+
+
+/*Text customization*/
+#block-a04f861a2aa44995b0609a2beffb82e6 h2.notion-heading {
+  margin: 0px !important;
+  color: var(--ema-white) !important;
+}
+
+
+
+/*6P Animation*/
+#block-80371ec13a544b45872df6672c21efa9 {
+  animation-name: pulse;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.5, 0, 0, 0);
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+
+
+/*------------------------------------*\
+   Section: Big goals
+\*------------------------------------*/
+
+#block-81db956855f84f01a15fd9f5f7f82f9b .notion-callout {
+  height: 300px !important;
+  border-radius: 20px !important;
+  border: 5px solid var(--ema-light) !important;
+  padding: 30px !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+#block-81db956855f84f01a15fd9f5f7f82f9b .notion-callout:hover {
+  border: 5px solid var(--ema-main) !important;
+  transform: scale(1.1) rotate(2deg);
+}
+
+
+
+
+
+/*------------------------------------*\
+   Section: Testimonials
+\*------------------------------------*/
+
+/*Background Image*/
+#block-5ffedb8355af47b8a1dbf8e6bd8acea9 {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb3729dc2-92fb-49c4-b958-ccc1c3f6185f%2F5._Secondary_Circles.png?table=block&id=274b2e35-45b3-4aac-b9ee-3bf5d6f1f062&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+
+
+/*GALLERY VIEW DATABASE*/
+
+
+#block-225c363f0b584b1ea378bae8c2c8ff7d {
+  width: 85% !important;
+}
+
+/*Increase the size of grid columns*/
+.notion-collection-gallery {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+}
+
+.notion-collection-gallery {
+  border-top: none !important; /*← Remove database top line*/
+  cursor: pointer; /*← Mouse styling for clicking*/
+  overflow: visible !important;
+}
+
+/*Make each page as cards*/
+.notion-collection-card {
+  background: var(--ema-white) !important;
+  padding: 12px !important;
+  border-radius: 20px !important;
+  overflow: visible !important;
+  box-shadow: 0px 0px 20px -15px rgba(0,0,0,0.6) !important;
+  /*↑ Left/Right, Top/Down, Blur, Spread, Opacity*/
+  transition: 0.3s ease-in-out !important;
+}
+
+.notion-collection-card:hover {
+  transform: translate(0,0px) scale(0.95) !important;
+}
+
+
+/*Enable cards shadows*/
+.notion-callout__content {
+  overflow: visible !important;
+}
+
+
+/*Hide icon*/
+.notion-property__title__icon-wrapper {
+  display: none !important;
+}
+
+
+/*Cover image*/
+.notion-collection-card__cover {
+  border-radius: 10px !important;
+  min-height: 250px !important; /*← Change cover size */
+  width: 100% !important;
+}
+
+/*Change title size*/
+.notion-collection-card .notion-property__title {
+  font-size: 15pt !important;
+  font-weight: bold !important;
+  margin-top: 5px !important;
+  margin-bottom: -5px !important;
+  
+}
+
+/*Center Card Content*/
+.notion-property__title, .notion-collection-card__property {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+  flex-wrap: nowrap !important;
+  align-content: center !important;
+  justify-content: center !important;
+  align-items: flex-start !important;
+}
+
+
+
+/*Properties*/
+.notion-collection-card__property {
+  font-size: 11pt;
+  min-height: 10px !important;
+  margin-bottom: -5px !important;
+}
+
+/*Main Category*/
+.notion-pill {
+    background: rgba(29, 29, 29, 0.34);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11px);
+    color: var(--ema-white) !important;
+    justify-content: center !important;
+    letter-spacing: 0.4px !important;
+    align-items: center !important;
+    border-radius: 50px !important;
+    position: absolute !important;
+    font-weight: bold !important;
+    font-size: 12px !important;
+    display: flex !important;
+    height: 35px !important;
+    padding: 10px 20px 10px !important;
+    margin: 0px !important;
+    right: 30px !important;
+    top: 30px !important;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+   Section: Wondering
+\*------------------------------------*/
+
+/*Main customizations*/
+#block-c29b57a0ee854183b157e22dbbc8a506 {
+  color: var(--ema-white) !important;
+}
+
+
+#block-c29b57a0ee854183b157e22dbbc8a506 .notion-callout {
+  border-radius: 20px !important;
+  padding: 50px !important;
+  color: var(--ema-dark) !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+   Section: Form
+\*------------------------------------*/
+
+/*Background Image*/
+#block-809772db035e4747aaba19d45d134fa0 {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fdd2d02eb-6fd5-4ac9-826e-6fb05beca5c0%2F6._Light_Circles.png?table=block&id=53f0d0e1-d778-4494-9976-47c19aad3fea&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: bottom !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+
+/*Form customizatiion*/
+#block-423539ec853841b0ada657389f10f835 {
+  background: var(--ema-white) !important;
+  border-radius: 20px !important;
+  padding: 50px !important;
+  width: 800px !important;
+}
+
+
+/*Important Note*/
+#block-d30fe539a3e54da3a6613a46dfd4688c {
+  width: 900px !important;
+  text-align: left !important;
+}
+
+#block-da00e661272841699ea8e08342caea9f {
+  font-size: 12pt !important;
+  align-items: center !important;
+}
+
+
+
+
+/*------------------------------------*\
+   Section: We believe
+\*------------------------------------*/
+
+/*Background Image*/
+#block-16abf743b3174c998590e4e58b63da83 {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3b8e1bc3-68fc-492e-a939-7ba750f0c0cc%2F7._People2.png?table=block&id=5434b2ee-aa2a-4055-bca8-bed346bdc9aa&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+/*Content width size*/
+#block-38efe71d0aa045d78c07c6ca5c03f7a2 {
+  width: 795px !important;
+}
+
+
+/*------------------------------------*/
+
+
+/*ITEMS*/
+/*Content width size*/
+#block-39ef960c64f040a9a152b5e1e8437d29 {
+  width: 600px !important;
+}
+
+/*Spacing & Distribution*/
+#block-39ef960c64f040a9a152b5e1e8437d29 .notion-callout {
+  padding: 20px !important;
+  margin-bottom: -40px !important;
+}
+
+/*Icons hovering*/
+#block-39ef960c64f040a9a152b5e1e8437d29 .notion-image:hover {
+  transition: 0.2s ease-in-out;
+  transform: translate(0px,0px) scale(1.2);
+}
+
+
+
+/*------------------------------------*\
+   Section: Footer
+\*------------------------------------*/
+
+/*Background Image*/
+#block-8f32575c0b524ba6ad2860190dfdae90 {
+  background-image: url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F33177692-c629-4094-ac79-64cabf1215b6%2F8._Footer.png?table=block&id=d07a1203-5563-4fc9-9258-1aff068078b9&spaceId=0b9e64fc-7238-4885-8579-d4f1c22970dd&width=2000&userId=4343c93b-29fd-45d3-918a-0c61e829d4e0&cache=v2);
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+
+
+/*Content customization*/
+#block-b87d8f057de14a818ff2d14f23928e13 {
+  width: 600px !important;
+  color: var(--ema-white) !important;
+  text-align: left !important;
+  line-height: 0pt !important;
+}
+
+
+
+/*Icons*/
+/*Center + change size*/
+#block-feb28282756044aaa721b712a94faf3d .notion-callout__content {
+  width: 150% !important;
+  max-width: 400px !important; /*<- change size*/
+  margin-left: 0px !important;
+  overflow: initial !important;
+}
+
+/*Remove padding*/
+#block-feb28282756044aaa721b712a94faf3d {
+  padding: 0px !important;
+}
+
+
+/*Crop the image at the bottom*/
+#block-e53967f2def345609a3eb0c51c9fa101 {
+  margin-bottom: -100px !important;
+}
+
+
+
+
+
+/*Hide Removed content toggle*/
+#block-850a935f3e1f43f0836f97658ddb3d22 {
+  display: none !important;
+}
+
