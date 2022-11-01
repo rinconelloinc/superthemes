@@ -1,0 +1,328 @@
+/*
+Project: freesystemscall.com
+Author: Luis Rincon @rinconelloinc
+Notion Website / Landing Page
+Created: Oct 22, 2022
+Updated: Oct 24, 2022
+*/
+
+
+
+/*------------------------------------*\
+   Global Customizations
+\*------------------------------------*/
+
+
+/*BRAND COLORS*/
+:root {
+  /*Main Colors*/
+  --ema-main: #E57C35 !important;
+  --ema-secondary: #F4B565 !important;
+
+  /*Secondary Colors*/
+  --ema-dark: #212121 !important;
+  --ema-medium: #5B5B5B !important;
+  --ema-light: #F2EFEA !important;
+  --ema-lightDARK: #BAB7B3 !important;
+  
+  /*Basic Colors*/
+  --ema-white: #ffffff !important;
+  --ema-black: #000000 !important;
+  
+  
+  /*Responsive Paddings*/
+  --padd-tablet: 0px 50px !important;
+  --padd-mobile: 0px 30px !important;
+  
+}
+
+
+
+/*COLORS OVERWRITE*/
+:root {
+  /*Text colors*/
+  --color-text-default: var(--ema-dark) !important;
+  --color-text-gray: var(--ema-medium) !important;
+  --color-text-orange: var(--ema-main) !important;
+  
+  /*Text blocks backgrunds*/
+  --color-bg-gray: var(--ema-medium) !important;
+  --color-bg-orange: var(--ema-main) !important;
+  
+  /*Blocks backgrounds*/
+  --color-bg-gray-light: var(--ema-medium) !important;
+  --color-bg-orange-light: var(--ema-main) !important;
+  --color-bg-brown-light: var(--ema-light) !important;
+  
+  
+  /*Property pill background*/
+  --color-pill-orange: var(--ema-main) !important;
+  --color-pill-gray: var(--ema-light) !important;
+}
+
+
+
+
+/*-------------------------------------*/
+
+
+/*TEXTS*/
+/*Font Family*/
+body { font-family: 'DM Sans', sans-serif !important; }
+
+/*Headings & Content sizes*/
+h1.notion-heading {
+  font-size: 30pt !important; 
+  font-family: 'DM Sans', sans-serif !important;
+}
+h2.notion-heading {
+  font-size: 25pt !important;
+  font-family: 'DM Sans', sans-serif !important;
+}
+h3.notion-heading {
+  font-size: 18pt !important;
+  font-family: 'DM Sans', sans-serif !important;
+}
+.notion-text {
+  font-size: 14pt !important;
+  font-family: 'DM Sans', sans-serif !important;
+}
+.notion-bulleted-list {
+  font-size: 14pt !important;
+  font-family: 'DM Sans', sans-serif !important;
+}
+.notion-property__title {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+.notion-header__title {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+.code {
+  font-family: 'DM Sans', sans-serif !important;
+  
+}
+
+
+
+
+/*Text selection */
+::selection {
+  color: var(--ema-light) !important;
+  background: var(--ema-secondary) !important;
+}
+
+
+
+/*-------------------------------------*/
+
+
+/*Hide Other pages toggle*/
+#block-7e07cdaf46294f97b62c332f67bd4330 {
+  display: none !important;
+}
+
+
+
+/*-------------------------------------*/
+
+
+
+/*IMAGE & VIDEO*/
+/*Round Images Borders*/
+.notion-image.normal img { border-radius: 10px !important; }
+.notion-image.page-width img { border-radius: 10px !important;}
+
+/*Round Video Borders*/
+.notion-video video { border-radius: 10px !important; }
+
+
+
+/*-------------------------------------*/
+
+
+
+/*SCROLLBAR*/
+/*Width size*/
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+/*Background color*/
+body::-webkit-scrollbar-track {
+  background: var(--ema-light);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--ema-lightDARK);
+  outline: 0px solid var(--ema-medium);
+  border-radius: 20px;
+}
+
+
+
+/*-------------------------------------*/
+
+
+/*NAVBAR*/
+
+.notion-navbar {
+  display: none !important;
+}
+
+
+.super-navbar {
+  display: none !important;
+}
+
+
+
+/*-------------------------------------*/
+
+
+/*HEADERS*/
+/*Hide header information (Icon + Title + Cover)*/
+.notion-header {
+  display: none !important;
+}
+
+
+/*-------------------------------------*/
+
+
+/*CALLOUTS*/
+/*Act like a container*/
+.notion-callout {
+  width: 100%;
+  margin: auto !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+/*Hide callout icon*/
+.notion-callout__icon {
+  display: none !important;
+}
+
+/* The callout content*/
+.notion-callout__content {
+  max-width: 1200px;
+  width: 100% !important;
+  margin: auto !important;
+}
+
+.notion-callout__content .notion-text__children {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.notion-callout .notion-callout__content > span {
+  display: none;
+}
+
+/*Make sections "Full width"*/
+.super-content {
+    max-width: 100% !important;
+    padding: 0px !important;
+}
+
+
+
+/*-------------------------------------*/
+
+
+/*BUTTON*/
+
+/*Main Button*/
+.notion-text__content .notion-link {
+  background: var(--ema-main);
+  color: var(--ema-white);
+  border: 0px solid var(--ema-main) !important;
+  padding: 5px 25px 6px 25px; /*Top-Left-Down-Right*/
+  margin-top: 0px;
+  display: inline-block;
+  border-radius: 100px;
+  text-size-adjust: 18pt;
+  font-size: 14pt;
+  opacity: 85% !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+/*Button animation*/
+.notion-text__content .notion-link:hover {
+   opacity: 100% !important;
+   transform: translate(0,0px) scale(0.90) !important;
+}
+
+
+
+
+/*BUTTON CTA*/
+
+/*Change button callout size*/
+#block-54b4a220507e45e08f80ed03a2100aaf.notion-callout {
+  border-radius: 100px !important;
+  width: 400px !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+
+#block-54b4a220507e45e08f80ed03a2100aaf.notion-callout:hover {
+   opacity: 100% !important;
+   transform: translate(0,0px) scale(0.90) !important;
+}
+
+
+/*Remove margins & Center Text*/
+#block-54b4a220507e45e08f80ed03a2100aaf h3.notion-heading {
+  margin: 0px !important;
+  text-align: center !important;
+}
+
+/*Button text customization*/
+#block-54b4a220507e45e08f80ed03a2100aaf .notion-semantic-string .link {
+  border-bottom: none !important; /* ← Remove underline*/
+  color: var(--ema-white) !important;
+  opacity: 100% !important;
+}
+
+
+
+
+
+
+
+/*-------------------------------------*/
+
+
+/*SCROLLING ANIMATIONS*/
+
+html { scroll-behavior: smooth !important; }
+
+.reveal-loaded .reveal [class*="reveal-"] {
+  opacity: 0 !important;
+  animation: none !important;
+  transition: 0s !important;
+}
+
+.reveal-loaded [class*="reveal-"] {
+  animation: revealAnimation 1s cubic-bezier(0.5, 0, 0, 1) both;
+}
+
+.reveal-loaded .reveal-2 { animation-delay: 0.1s; }
+.reveal-loaded .reveal-3 { animation-delay: 0.2s; }
+.reveal-loaded .reveal-4 { animation-delay: 0.3s; }
+.reveal-loaded .reveal-5 { animation-delay: 0.4s; }
+.reveal-loaded .reveal-6 { animation-delay: 0.5s; }
+
+
+@keyframes revealAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
