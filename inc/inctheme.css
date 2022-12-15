@@ -3,7 +3,7 @@ Project: inc_template
 Author: Luis Rincon @rinconelloinc
 Notion / Super Website Template
 Created: Sep 21, 2022
-Updated: Sep 27, 2022
+Updated: Dec 15, 2022
 */
 
 
@@ -299,7 +299,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .notion-callout .notion-callout__content > span {
-  display: none;
+  display: none !important;
 }
 
 
@@ -377,8 +377,8 @@ body::-webkit-scrollbar-thumb {
 /*Resizing & Paddings*/
 .notion-callout.bg-brown-light {
   z-index: 9 !important;
-  margin-bottom: -90px !important; /*← Overlap */
-  width: 1200px !important; /*← Callout width */
+  margin-bottom: 0px !important; /*← Overlap */
+  width: 75% !important; /*← Callout width */
   padding-top: 0px !important;
   padding-bottom: 0px !important;
 }
@@ -389,7 +389,9 @@ body::-webkit-scrollbar-thumb {
   display: inline-block !important;
   padding: 30px !important;
   margin-left: 0px !important; /*← Space between text & button */
+  margin-top: 0px !important; /*← Remove space above content */
 }
+
 
 
 /*Hide Callout ID*/
@@ -413,12 +415,12 @@ body::-webkit-scrollbar-thumb {
   font-size: 13pt !important;
   opacity: 100% !important;
   color: var(--inc-main);
+  transition: 0.2s ease-in-out !important;
 }
 
 .bg-brown-light .notion-text__content .notion-link:hover {
    opacity: 100% !important;
    border: 3px solid var(--inc-medium) !important;
-   transition: 0.2s ease-in-out !important;
    background: var(--inc-main) !important;
    color: var(--inc-dark) !important;
 }
@@ -851,12 +853,14 @@ body::-webkit-scrollbar-thumb {
 
    
 /*-------------------------------------*/
+    
    
-
+   
+   
 /*Callout (Brown = Yellow Background)*/
 .notion-callout.bg-brown-light {
-  width: 90% !important;
-  margin-bottom: -6% !important;
+  width: 90% !important; /*← Callout width */
+  margin-bottom: 0px !important;
 }
 
 
@@ -864,9 +868,10 @@ body::-webkit-scrollbar-thumb {
 .bg-brown-light .notion-callout__content > * {
   padding: 10px !important;
   margin-bottom: 10px !important;
+  margin-top: 14px !important; /*← Space above content */
 }
 
-/*Reduce space between copy ^ button*/
+/*Reduce space between copy & button*/
 .bg-brown-light .notion-text__content .notion-link {
   margin-top: -20px !important;
 }
@@ -1061,10 +1066,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/*Left space of every icon*/
-.super-footer__icons .notion-link {
-  padding-left: 14% !important;
+/*Position icons*/
+.super-footer__icons {
+  justify-content: center !important; /*← Icons position */
+  gap: 50px !important; /*← Space between icons */
 }
+
+.super-footer__icons .notion-link {
+  padding-left: 0px !important;
+}
+
+
 
 
 
@@ -1119,7 +1131,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 10px !important;
 }
 
-/*Reduce space between copy ^ button*/
+/*Reduce space between copy & button*/
 .bg-yellow-light .notion-text__content .notion-link {
   margin-top: -20px !important;
 }
@@ -1127,11 +1139,14 @@ body::-webkit-scrollbar-thumb {
    
 /*-------------------------------------*/
    
-
+   
+   
+   
+   
 /*Callout (Brown = Yellow Background)*/
 .notion-callout.bg-brown-light {
   width: 90% !important;
-  margin-bottom: -6% !important;
+  margin-bottom: 0px !important;
 }
 
 
@@ -1139,9 +1154,10 @@ body::-webkit-scrollbar-thumb {
 .bg-brown-light .notion-callout__content > * {
   padding: 10px !important;
   margin-bottom: 10px !important;
+  margin-top: 14px !important; /*← Space above content */
 }
 
-/*Reduce space between copy ^ button*/
+/*Reduce space between copy & button*/
 .bg-brown-light .notion-text__content .notion-link {
   margin-top: -20px !important;
 }
@@ -1163,20 +1179,15 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 80px !important;
 }
 
-
-/*Center Logo*/
+/*Align Logo*/
 .super-footer__logo {
   margin-right: auto !important;
-  margin-left: auto !important;
+  margin-left: 0px !important;
 }
 
-
-/*Left space of every icon*/
-.super-footer__icons .notion-link {
-  padding-left: 14% !important;
-}
-
-
+    
+   
+   
 
 
 
