@@ -95,7 +95,7 @@
 
 body {
   padding: 0 !important;
-  background: linear-gradient(180deg, var(--darkest), var(--dark));
+  background: linear-gradient(180deg, var(--darkest), var(--dark)) !important;
 }
 
 
