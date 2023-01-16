@@ -1,0 +1,629 @@
+/*------------------------------------*\
+   Brand Colors
+\*------------------------------------*/
+
+:root {
+  /*Main Colors*/
+  --main: #392C72 !important;
+  --mainlight: #604BC2 !important;
+  --maindark: #251D4A !important;
+  
+  /*Colors with opacity = (#HEX + Opacity)*/
+  --mainRGBA: #392C7240 !important; 
+  --darkRGBA: #19191980 !important;
+  
+  
+  /*Secondary Colors*/
+  --light: #E7E7E7 !important;
+  --medium: #303030 !important;
+  --dark: #191919 !important;
+  --darkest: #151515 !important;
+
+
+
+  /*Specials*/
+  --dark-fade: linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(24,24,24,1) 30%, rgba(25,25,25,1) 100%) !important;
+  --main-glow: 0px 0px 20px 0.02px var(--mainRGBA) !important;
+
+  
+  /*Basic Colors*/
+  --white: #ffffff !important;
+  --black: #000000 !important;
+}
+
+
+
+/*------------------------------------*\
+   Others
+\*------------------------------------*/
+
+:root {
+  
+  /*Columns spacing*/
+  --column-spacing: 25px !important;
+  
+  /*Blur background*/
+  --blur: blur(10px) !important;
+}
+
+
+
+
+/*------------------------------------*\
+   Overwrite
+\*------------------------------------*/
+
+:root {
+  /*Text colors*/
+  --color-text-default: var(--light) !important;
+  --color-text-gray: var(--medium) !important;
+  --color-text-purple: var(--main) !important;
+  
+  /*Text blocks backgrunds*/
+  --color-bg-gray: var(--medium) !important;
+  --color-bg-purple: var(--main) !important;
+  
+  /*Blocks backgrounds*/
+  --color-bg-gray-light: var(--medium) !important;
+  --color-bg-purple-light: var(--main) !important;
+  
+  
+  /*Property pill background*/
+  --color-pill-gray: var(--medium) !important;
+  --color-pill-purple: var(--main) !important;
+  
+  
+  /*Code background color*/
+  --color-code-bg: var(--mainlight) !important;
+  
+}
+
+
+
+
+/*Recolor text on brand color backgrounds*/
+.bg-purple, .bg-purple-light {
+  color: var(--dark) !important;
+}
+
+
+
+
+/*------------------------------------*\
+   Background
+\*------------------------------------*/
+
+body {
+  padding: 0 !important;
+  background: linear-gradient(180deg, var(--darkest), var(--dark));
+}
+
+
+
+
+
+/*------------------------------------*\
+   Texts
+\*------------------------------------*/
+
+/* Headings & Texts */
+  h1.notion-heading { font-size: 34pt !important; }
+  h2.notion-heading { font-size: 24pt !important; }
+  h3.notion-heading { font-size: 18pt !important; }
+  .notion-text { font-size: 12pt; }
+
+
+/*Text selection*/
+::selection {
+  color: var(--light) !important;
+  background: var(--mainlight) !important;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+   Images & Videos
+\*------------------------------------*/
+
+/*Round Images Borders*/
+.notion-image.normal img {
+  border-radius: 16px !important; }
+.notion-image.page-width img {
+  border-radius: 16px !important; }
+
+/*Round Video Borders*/
+.notion-video video { border-radius: 16px !important; }
+
+
+
+
+
+/*------------------------------------*\
+   Navbar
+\*------------------------------------*/
+
+/*Main Customization*/
+.super-navbar { /*https://css.glass/*/
+  background: var(--darkRGBA) !important;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: var(--blur) !important;
+  height: 70px !important;
+  color: var(--light) !important;
+  margin: auto !important;
+  justify-content: center !important;
+  margin-top: 0px !important;
+}
+
+  
+/*Center logo + sections to grid*/
+.super-navbar__content {
+  max-width: 900px !important;
+  margin: auto !important;
+}
+
+/*CTA Font Weight*/
+.super-navbar__cta {
+  border-radius: 9px !important;
+}
+
+
+
+.super-navbar__logo {
+   transition: 0.3s ease-in-out !important;
+}
+
+
+.super-navbar__logo:hover {
+    opacity: 70% !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+   General site Width
+\*------------------------------------*/
+
+/*Full width on all sections */
+.super-content {
+    padding: 0px !important;
+}
+
+
+/*Super margins*/
+.super-content.max-width {
+  max-width: 900px !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+   Scrollbar
+\*------------------------------------*/
+
+/*Width size*/
+body::-webkit-scrollbar {
+  width: 15px !important;
+}
+
+/*Background color*/
+body::-webkit-scrollbar-track {
+  background: var(--medium) !important;
+}
+
+/*Bar customization*/
+body::-webkit-scrollbar-thumb {
+  background-color: var(--dark) !important;
+  outline: 0px solid var(--dark) !important;
+  border-radius: 20px !important;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+   Toggle
+\*------------------------------------*/
+
+/*Hide Other pages toggle*/
+#page-index .notion-toggle {
+  display: none !important;
+}
+
+
+
+/*------------------------------------*\
+   Headers
+\*------------------------------------*/
+
+/*Hide header information (Icon + Title + Cover)*/
+.notion-header {
+  display: none !important;
+}
+
+.notion-header__title {
+  display: block !important;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+   Covers
+\*------------------------------------*/
+
+/*Custom height*/
+.notion-header__cover {
+  max-height: 350px;
+  height: 350px;
+}
+
+
+/* Heading column */
+.notion-column > .notion-heading:first-of-type {
+  margin-top: 5px !important;
+}
+
+
+
+
+
+
+/*------------------------------------*\
+   Callouts
+\*------------------------------------*/
+
+
+/*GRAY CALLOUTS*/
+
+.notion-callout.bg-gray-light.border {
+  width: 100%;
+  margin: auto !important;
+  text-align: center !important;
+  background: var(--dark-fade) !important ;
+  border: 1.5px solid var(--medium) !important;
+  border-radius: 16px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+.notion-callout.bg-gray-light.border:hover {
+  box-shadow: var(--main-glow);
+  border: 1.5px solid var(--main) !important;
+}
+
+
+/*Hide callout icon & ID*/
+.notion-callout.bg-gray-light.border .notion-callout__icon,
+.notion-callout.bg-gray-light.border .notion-callout__content > span {
+  display: none !important;
+}
+
+
+
+
+
+/*DEFAULT CALLOUTS*/
+
+.notion-callout {
+    display: flex!important;
+    width: 100% !important;
+    align-self: flex-start;
+    margin-top: 20px!important;
+    padding: 0px !important;
+    border: none !important;
+}
+
+.notion-callout__icon {
+    margin-right: 10px!important;
+    margin-top: 2px!important;
+    margin-left: 10px!important;
+}
+
+
+
+
+
+
+
+/*-------------------------------------*/
+
+
+/*Align items together (Copy + Image)*/
+.notion-column-list {
+  align-items: center !important;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+   Button
+\*------------------------------------*/
+
+/*Main + Hover*/
+.notion-text__content .notion-link{
+  background: var(--main);
+  border: none !important;
+  border-radius: 9px;
+  padding: 8px 15px 9px 15px; /*Top-Left-Down-Right*/
+  margin-top: 10px;
+  display: inline-block;
+  color: var(--light) !important;
+  font-size: 13pt;
+  opacity: 100% !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.notion-text__content .notion-link:hover {
+   opacity: 80% !important;
+   color: var(--light);
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+   Gallery Database (Medium)
+\*------------------------------------*/
+
+
+
+/*Increase the size of grid columns*/
+.notion-collection-gallery.medium {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+}
+
+
+/*Gallery Database*/
+.notion-collection-gallery.medium {
+  border-top: none !important;
+  cursor: pointer; /*Mouse styling for clicking*/
+  overflow: visible !important;
+  gap: 30px !important;
+}
+
+/*Individual cards inside gallery*/
+.notion-collection-gallery.medium .notion-collection-card {
+  background: var(--dark-fade) !important;
+  padding: 0px !important;
+  border: 1.5px solid var(--medium) !important;
+  border-radius: 16px !important;
+  overflow: visible !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+.notion-collection-gallery.medium .notion-collection-card:hover {
+  box-shadow: var(--main-glow);
+  border: 1.5px solid var(--main) !important;
+}
+
+
+
+/*Hide icon*/
+.notion-collection-gallery.medium .notion-property__title__icon-wrapper {
+  display: none !important;
+}
+
+/*Cover image*/
+.notion-collection-gallery.medium .notion-collection-card__cover {
+  border-radius: 16px 16px 0px 0px !important;
+  min-height: 20px !important;
+  width: 100% !important;
+}
+
+.notion-collection-gallery.medium .notion-collection-card:hover {
+  transition: 0.3s ease-in-out !important;
+  opacity: 1 !important;
+  position: relative !important;
+  transform: translateY(-4px)!important;
+}
+
+
+/*-------------------------------------*/
+
+
+/*PROPERTIES*/
+
+.notion-collection-gallery.medium .notion-collection-card__content {
+  padding: 30px;
+}
+
+
+
+/*Show - Enable properties*/
+.notion-collection-gallery.medium .notion-property  {
+  display: block !important;
+  text-align: left !important;
+  
+}
+
+/*Title font size*/
+.notion-collection-gallery.medium .notion-property.notion-property__title {
+  font-size: 15pt;
+}
+
+
+/*Card / Property Height*/
+.notion-collection-gallery.medium .notion-collection-card {
+    height: 100% !important;
+}
+
+
+
+/*-------------------------------------*/
+
+
+
+/*Hide the header title */
+.notion-collection__header-wrapper h3,
+.notion-dropdown__button {
+  display: none !important;
+}
+
+/*Remove "top border gallery line"*/
+.notion-collection-gallery {
+  border: none !important;
+}
+
+/*Hide drop down menu header*/
+.notion-dropdown__menu-header {
+  display: none !important;
+}
+
+
+/*-------------------------------------*/
+
+
+/*Place them on top (Initial State)*/
+.notion-dropdown__menu.initial-state {
+  z-index: 9 !important;
+  opacity: 100% !important;
+  transform: none !important;
+}
+
+/*Make them full width*/
+.notion-dropdown {
+  width: 100% !important;
+}
+
+
+.notion-dropdown__button {
+  align-items: center;
+}
+
+/*Hide the "Notion Menu" item icon*/
+.notion-dropdown__option-icon {
+  display: none !important;
+}
+
+/*Change Position and Layout*/
+.notion-dropdown__option-list {
+  display: flex !important; /* ← Flex (Horizontal) Block (Vertical)*/
+  justify-content: center; /* ← Position*/
+  overflow-y: auto;
+}
+
+/*Styling*/
+.notion-dropdown__menu {
+  left: 0 !important;
+  position: unset !important;
+  transform: none !important;
+  box-shadow: unset !important;
+  padding: 10px 0 !important; /* ← Top and down separation */
+  background: none !important;
+}
+
+
+/*Disable animations*/
+.notion-dropdown__menu.animate-in.animate-out,
+.notion-dropdown__menu.animate-in,
+.notion-dropdown__menu.animate-out {
+  animation: none !important;
+}
+
+
+
+
+/*------------------------------------*\
+   Footer
+\*------------------------------------*/
+
+
+.super-footer__icons .notion-link {
+  gap:20px !important;
+  opacity: 20% !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+
+.super-footer__icons .notion-link:hover {
+  opacity: 1 !important;
+}
+
+
+.super-footer__footnote {
+  opacity: 20% !important;
+}
+
+
+
+
+
+
+
+
+
+/*-------------------------------------*/
+/*-------------------------------------*/
+/*-------------------------------------*/
+
+
+
+
+/*************************************************************
+   RESPONSIVE - Mobile
+*************************************************************/
+@media (max-width: 680px) {
+  
+  
+
+/*------------------------------------*\
+   Global Components
+\*------------------------------------*/
+
+/* Font sizes*/  
+  h1.notion-heading { font-size: 28pt !important; }
+  h2.notion-heading { font-size: 23pt !important; }
+  h3.notion-heading { font-size: 16pt !important; }
+  .notion-text { font-size: 12pt !important; }
+
+
+
+/*------------------------------------*\
+   General site Width
+\*------------------------------------*/
+
+/*Full width on all sections */
+.super-content {
+    padding: 0px !important;
+}
+
+
+/*Super margins*/
+.super-content.max-width {
+  max-width: 80% !important;
+}
+
+
+
+
+/*------------------------------------*\
+   Navbar
+\*------------------------------------*/
+
+
+/*Center logo + sections to grid*/
+.super-navbar__content {
+  max-width: 80% !important;
+  margin: auto !important;
+}
