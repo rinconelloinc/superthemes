@@ -95,7 +95,7 @@
 
 body {
   padding: 0 !important;
-  background: linear-gradient(180deg, var(--darkest), var(--dark)) !important;
+  background: var(--dark) !important;
   
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
