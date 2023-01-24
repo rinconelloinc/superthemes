@@ -54,14 +54,21 @@
 \*------------------------------------*/
 
 :root {
+  
+  /*Background color*/
+  --color-bg-default: var(--black) !important;
+
+  
   /*Text colors*/
   --color-text-default: var(--light) !important;
   --color-text-gray: var(--medium) !important;
   --color-text-purple: var(--main) !important;
   
+  
   /*Text blocks backgrunds*/
   --color-bg-gray: var(--medium) !important;
   --color-bg-purple: var(--main) !important;
+  
   
   /*Blocks backgrounds*/
   --color-bg-gray-light: var(--medium) !important;
@@ -76,7 +83,58 @@
   /*Code background color*/
   --color-code-bg: var(--mainlight) !important;
   
+  
+  
+  /*------------------------------------*/
+  
+  /*OTHER VARIABLES*/
+  
+  
+  /*Text colors*/
+  --color-text-default-light: var(--light) !important;
+  
+  
+  /*Gallery Databse*/
+  --color-card-bg: var(--dark) !important;
+  --color-card-bg-hover: var(--dark) !important;
+  
+  
+  
+ /*Callouts borders*/
+  --color-border-default: var(--dark) !important;
+  --color-border-dark: var(--color-border-default) !important;
+  
+  
+  
+  /*Navbar*/
+  --navbar-text-color: var(--white) !important;
+  --navbar-background-color: var(--dark) !important;
+  --navbar-button-text-color: var(--white) !important;
+  --navbar-button-background-color: var(--main) !important;
+  --navbar-menu-background-color: var(--navbar-background-color);
+  
+  
+  
+  /*Scrollbar*/
+  --scrollbar-background-color: var(--medium) !important;
+  --scrollbar-thumb-color: var(--dark) !important;
+  --scrollbar-border-color: var(--medium) !important;
+  
+  
+  /*Footer*/
+  --footer-text-color: var(--white) !important;
+  --footer-background-color: var(--dark) !important;
+  
+  
+  /*Miscelaneous*/
+  --color-ui-hover-bg: var(--dark) !important;
+  --color-calendar-weekend-bg: var(--dark) !important;
+  --color-checkbox-bg: var(--dark) !important;
+  
 }
+
+  
+  
 
 
 
