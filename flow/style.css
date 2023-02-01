@@ -40,7 +40,7 @@
   
   
   /*Background color*/
-  --color-bg-default: var(--darkest);
+  --color-bg-default: var(--darkest) !important;
 
   
   /*Text colors*/
@@ -121,14 +121,14 @@
   
   
   /* Navbar */
-  --navbar-height: 70px;
-  --navbar-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
-  --navbar-text-color: var(--white);
-  --navbar-background-color: var(--darkRGBA);
-  --navbar-button-background-color: var(--main);
-  --navbar-button-text-color: var(--color-text-default);
-  --navbar-button-border-radii: calc(var(--border-radii-global) + 5px);
-  --navbar-menu-background-color: var(--navbar-background-color);
+  --navbar-height: 70px !important;
+  --navbar-shadow: 0 0px 0px rgba(0, 0, 0, 0.1) !important;
+  --navbar-text-color: var(--white) !important;
+  --navbar-background-color: var(--darkRGBA) !important;
+  --navbar-button-background-color: var(--main) !important;
+  --navbar-button-text-color: var(--color-text-default) !important;
+  --navbar-button-border-radii: calc(var(--border-radii-global) + 5px) !important;
+  --navbar-menu-background-color: var(--navbar-background-color) !important;
   
   
   /* Footer */
@@ -538,7 +538,7 @@ body {
 
 
 /*------------------------------------*\
-   Embed
+   Footer
 \*------------------------------------*/
 
 .notion-embed__container {
