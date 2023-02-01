@@ -1,118 +1,139 @@
 /*------------------------------------*\
-   Brand Colors
+   VARIABLES - Colors
 \*------------------------------------*/
 
+
 :root {
+  
   /*Main Colors*/
-  --main: #392C72 !important;
-  --mainlight: #604BC2 !important;
-  --maindark: #251D4A !important;
+  --main: #392C72;
+  --mainlight: #604BC2;
+  --maindark: #251D4A;
   
   /*Colors with opacity = (#HEX + Opacity)*/
-  --mainRGBA: #392C7240 !important; 
-  --darkRGBA: #19191980 !important;
+  --mainRGBA: #392C7240; 
+  --darkRGBA: #19191980;
   
   
   /*Secondary Colors*/
-  --light: #E7E7E7 !important;
-  --medium: #303030 !important;
-  --dark: #191919 !important;
-  --darkest: #151515 !important;
-
+  --light: #E7E7E7;
+  --medium: #303030;
+  --dark: #191919;
+  --darkest: #151515;
 
 
   /*Specials*/
-  --dark-fade: linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(24,24,24,1) 30%, rgba(25,25,25,1) 100%) !important;
-  --main-glow: 0px 0px 20px 0.02px var(--mainRGBA) !important;
+  --dark-fade: linear-gradient(0deg, rgba(21,21,21,1) 0%, rgba(24,24,24,1) 30%, rgba(25,25,25,1) 100%);
+  --main-glow: 0px 0px 20px 0.02px var(--mainRGBA);
 
   
   /*Basic Colors*/
-  --white: #ffffff !important;
-  --black: #000000 !important;
-}
+  --white: #ffffff;
+  --black: #000000;
 
-
-
-/*------------------------------------*\
-   Others
-\*------------------------------------*/
-
-:root {
-  
-  /*Columns spacing*/
-  --column-spacing: 25px !important;
   
   /*Blur background*/
-  --blur: blur(10px) !important;
-}
-
-
-
-
-/*------------------------------------*\
-   Overwrite
-\*------------------------------------*/
-
-:root {
-  
-  /*Background color*/
-  --color-bg-default: var(--black) !important;
-
-  
-  /*Text colors*/
-  --color-text-default: var(--light) !important;
-  --color-text-gray: var(--medium) !important;
-  --color-text-purple: var(--main) !important;
-  
-  
-  /*Text blocks backgrunds*/
-  --color-bg-gray: var(--medium) !important;
-  --color-bg-purple: var(--main) !important;
-  
-  
-  /*Blocks backgrounds*/
-  --color-bg-gray-light: var(--medium) !important;
-  --color-bg-purple-light: var(--main) !important;
-  
-  
-  /*Property pill background*/
-  --color-pill-gray: var(--medium) !important;
-  --color-pill-purple: var(--main) !important;
-  
-  
-  /*Code background color*/
-  --color-code-bg: var(--mainlight) !important;
-  
+  --blur: blur(10px);
   
   
   /*------------------------------------*/
   
-  /*OTHER VARIABLES*/
   
+  /*Background color*/
+  --color-bg-default: var(--darkest);
+
   
   /*Text colors*/
-  --color-text-default-light: var(--light) !important;
+  --color-text-default: var(--light);
+  --color-text-gray: var(--medium);
+  --color-text-purple: var(--main);
+  
+  
+  /*Text blocks backgrunds*/
+  --color-bg-gray: var(--medium);
+  --color-bg-purple: var(--main);
+  
+  
+  /*Blocks backgrounds*/
+  --color-bg-gray-light: var(--medium);
+  --color-bg-purple-light: var(--main);
+  
+  
+  /*Code background color*/
+  --color-code-bg: var(--mainlight);
   
   
   /*Gallery Databse*/
-  --color-card-bg: var(--dark) !important;
-  --color-card-bg-hover: var(--dark) !important;
+  --color-card-bg: var(--dark);
+  --color-card-bg-hover: var(--dark);
   
   
+  /*Property pill background*/
+  --color-pill-gray: var(--medium);
+  --color-pill-purple: var(--main);
+
+
+
+
+/*------------------------------------*\
+   VARIABLES - Globals
+\*------------------------------------*/
+
   
- /*Callouts borders*/
-  --color-border-default: var(--dark) !important;
-  --color-border-dark: var(--color-border-default) !important;
+  /* Globals */
+  --padding-global: .6rem; /* Default */
+  --border-radii-global: 5px;
+
+
+  /* Layout */
+  --layout-max-width: 900px;
+  --column-spacing: 25px;
+
+
+  /* Page */
+  --header-cover-height: 30vh;
+  --header-title-align: left;
+  --header-icon-align: -112px auto auto;
+  --header-display: none;
+  --page-display: block;
+
   
   
+  /*------------------------------------*/
   
-  /*Navbar*/
-  --navbar-text-color: var(--white) !important;
-  --navbar-background-color: var(--dark) !important;
-  --navbar-button-text-color: var(--white) !important;
-  --navbar-button-background-color: var(--main) !important;
+  
+  /* Typography */
+  --quote-size: 1.2em;
+  --heading-size: 1rem; 
+  --primary-font: 'Inter';
+  --secondary-font: 'Inter';
+  --text-weight: normal;
+  --heading-weight: 600;
+  --heading1-size: calc(var(--heading-size) * 2.5) !important;
+  --heading2-size: calc(var(--heading-size) * 1.8);
+  --heading3-size: calc(var(--heading-size) * 1.2);
+  
+  /* Text Bg Padding */
+  --text-bg-padding: calc(var(--padding-global) - 0.6rem);
+  
+  
+ /*------------------------------------*/
+  
+  
+  /* Navbar */
+  --navbar-height: 70px;
+  --navbar-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+  --navbar-text-color: var(--white);
+  --navbar-background-color: var(--darkRGBA);
+  --navbar-button-background-color: var(--main);
+  --navbar-button-text-color: var(--color-text-default);
+  --navbar-button-border-radii: calc(var(--border-radii-global) + 5px);
   --navbar-menu-background-color: var(--navbar-background-color);
   
+  
+  /* Footer */
+  --footer-text-color: var(--white) !important;
+  --footer-background-color: var(--dark) !important;
   
   
   /*Scrollbar*/
@@ -121,21 +142,127 @@
   --scrollbar-border-color: var(--medium) !important;
   
   
-  /*Footer*/
-  --footer-text-color: var(--white) !important;
-  --footer-background-color: var(--dark) !important;
+  
+  /* Image */
+  --image-border-radii: calc(var(--border-radii-global) - 5px);
+  
+  
+  
+  /* Code */
+  --code-padding: calc(var(--padding-global) + 1.4rem);
+  --code-border-radii: var(--border-radii-global);
+  
+  
+  /* Embed */
+  --embed-border-radii: calc(var(--border-radii-global) - 5px);
+  
+  
+
+  /* Tweet */
+  --tweet-padding: calc(var(--padding-global) + 0.65rem) calc(var(--padding-global) + 0.65rem) calc(var(--padding-global) + 0.05rem) calc(var(--padding-global) + 0.65rem);
+  --tweet-border-radii: var(--border-radii-global);
+
+
+  /* Bookmark */
+  --bookmark-padding: calc(var(--padding-global) + 0.15rem) 0px calc(var(--padding-global) + 0.025rem) calc(var(--padding-global) + 0.275rem);
+  --bookmark-border-radii: var(--border-radii-global);
+  --bookmark-image-border-radii: 0px calc(var(--border-radii-global) - 1px) calc(var(--border-radii-global) - 1px) 0px;
+
+  
+  
+ /*------------------------------------*/
+  
+  
+  /* Callouts */
+  --callout-padding: calc(var(--padding-global) + 0.4rem) calc(var(--padding-global) + 0.4rem) calc(var(--padding-global) + 0.4rem) calc(var(--padding-global) + 0.1em)!important;
+  --callout-border-radii: calc(var(--border-radii-global) - 2px);
+  --callout-icon-display: block;
+  --callout-shadow: none;
+  
+  
+  /* Borders */
+  --border-thickness-global: 1px;
+  --border-type-global: solid;
+  --border-color-global: var(--color-border-default);
+  --border-global: var(--border-thickness-global) var(--border-type-global) var(--border-color-global);
+  --color-border-default: var(--dark) !important;
+  --color-border-dark: var(--color-border-default) !important;
+  
+  
+  
+  /*------------------------------------*/
+
+
+  /* Collection cards */
+  --collection-card-gap: 15px;
+  --collection-card-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 2px 4px;
+  --collection-card-cover-height: 200px;
+  --collection-card-cover-height-small: calc(var(--collection-card-cover-height) - 72px);
+  --collection-card-title-size: 0.875rem;
+
+
+  /* Collection padding */
+  --collection-card-padding: 0px 0px var(--padding-global) 0px;
+  --collection-card-title-padding: var(--padding-global) var(--padding-global) 0px var(--padding-global);
+  --collection-card-content-padding: 0px var(--padding-global) 0px var(--padding-global);
+  --collection-list-item-padding: calc(var(--padding-global) - 0.5rem);
+  --collection-table-padding: calc(var(--padding-global) - 0.3rem) calc(var(--padding-global) - 0.1rem);
+  
+  
+  /* Collection border */
+  --collection-card-border-radii: var(--border-radii-global);
+  --collection-list-item-border-radii: calc(var(--border-radii-global) - 1px);
+  --collection-header-border: 1px solid var(--color-border-dark);
+  
   
   
   /*Miscelaneous*/
   --color-ui-hover-bg: var(--dark) !important;
   --color-calendar-weekend-bg: var(--dark) !important;
   --color-checkbox-bg: var(--dark) !important;
-  
+
 }
 
-  
-  
 
+
+
+
+/*------------------------------------*\
+   Specific customizations
+\*------------------------------------*/
+
+body {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+   text-rendering: optimizeLegibility !important;
+}
+
+
+
+/*Full width on all sections */
+.super-content {
+    padding: 0px !important;
+}
+
+
+
+/*Hide Other pages toggle*/
+#page-index .notion-toggle {
+  display: none !important;
+}
+
+
+/*Align items together (Copy + Image)*/
+.notion-column-list {
+  align-items: center !important;
+}
+
+
+/*Text selection*/
+::selection {
+  color: var(--light) !important;
+  background: var(--mainlight) !important;
+}
 
 
 
@@ -148,158 +275,37 @@
 
 
 /*------------------------------------*\
-   Background
-\*------------------------------------*/
-
-body {
-  padding: 0 !important;
-  background: var(--darkest) !important;
-  
-  -webkit-font-smoothing: antialiased !important;
-  -moz-osx-font-smoothing: grayscale !important;
-   text-rendering: optimizeLegibility !important;
-}
-
-
-
-
-
-/*------------------------------------*\
-   Texts
-\*------------------------------------*/
-
-/* Headings & Texts */
-  h1.notion-heading { font-size: 34pt !important; }
-  h2.notion-heading { font-size: 24pt !important; }
-  h3.notion-heading { font-size: 18pt !important; }
-  .notion-text { font-size: 12pt; }
-
-
-/*Text selection*/
-::selection {
-  color: var(--light) !important;
-  background: var(--mainlight) !important;
-}
-
-
-
-
-
-
-
-/*------------------------------------*\
-   Images & Videos
-\*------------------------------------*/
-
-/*Round Images Borders*/
-.notion-image.normal img {
-  border-radius: 16px !important; }
-.notion-image.page-width img {
-  border-radius: 16px !important; }
-
-/*Round Video Borders*/
-.notion-video video { border-radius: 16px !important; }
-
-
-
-
-
-/*------------------------------------*\
    Navbar
 \*------------------------------------*/
 
-/*Main Customization*/
-.super-navbar { /*https://css.glass/*/
-  background: var(--darkRGBA) !important;
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1) !important;
+/*Blur*/
+.super-navbar {
   backdrop-filter: var(--blur) !important;
-  height: 70px !important;
-  color: var(--light) !important;
-  margin: auto !important;
-  justify-content: center !important;
-  margin-top: 0px !important;
 }
 
   
 /*Center logo + sections to grid*/
 .super-navbar__content {
-  max-width: 900px !important;
+  max-width: calc(var(--layout-max-width) + 50px);
   margin: auto !important;
 }
 
-/*CTA Font Weight*/
-.super-navbar__cta {
-  border-radius: 9px !important;
-}
-
-
-
-.super-navbar__logo {
-   transition: 0.3s ease-in-out !important;
-}
-
-
-.super-navbar__logo:hover {
-    opacity: 70% !important;
-}
+/*Logo Hover*/
+.super-navbar__logo { transition: 0.3s ease-in-out !important; }
+.super-navbar__logo:hover { opacity: 70% !important; }
 
 
 
 
 
 /*------------------------------------*\
-   General site Width
+  Videos
 \*------------------------------------*/
 
-/*Full width on all sections */
-.super-content {
-    padding: 0px !important;
-}
 
+/*Round Video Borders*/
+.notion-video video { border-radius: 16px !important; }
 
-/*Super margins*/
-.super-content.max-width {
-  max-width: 900px !important;
-}
-
-
-
-
-
-/*------------------------------------*\
-   Scrollbar
-\*------------------------------------*/
-
-/*Width size*/
-body::-webkit-scrollbar {
-  width: 15px !important;
-}
-
-/*Background color*/
-body::-webkit-scrollbar-track {
-  background: var(--medium) !important;
-}
-
-/*Bar customization*/
-body::-webkit-scrollbar-thumb {
-  background-color: var(--dark) !important;
-  outline: 0px solid var(--dark) !important;
-  border-radius: 20px !important;
-}
-
-
-
-
-
-
-/*------------------------------------*\
-   Toggle
-\*------------------------------------*/
-
-/*Hide Other pages toggle*/
-#page-index .notion-toggle {
-  display: none !important;
-}
 
 
 
@@ -311,13 +317,6 @@ body::-webkit-scrollbar-thumb {
 .notion-header {
   display: none !important;
 }
-
-.notion-header__title {
-  display: block !important;
-}
-
-
-
 
 
 
@@ -341,8 +340,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
 /*------------------------------------*\
    Callouts
 \*------------------------------------*/
@@ -354,7 +351,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin: auto !important;
   text-align: center !important;
-  background: var(--dark-fade) !important ;
+  background: var(--dark-fade) !important;
   border: 1.5px solid var(--medium) !important;
   border-radius: 16px !important;
   padding-left: 30px !important;
@@ -393,23 +390,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
-
-/*-------------------------------------*/
-
-
-/*Align items together (Copy + Image)*/
-.notion-column-list {
-  align-items: center !important;
-}
-
-
-
-
-
-
-
 /*------------------------------------*\
    Button
 \*------------------------------------*/
@@ -432,9 +412,6 @@ body::-webkit-scrollbar-thumb {
    opacity: 80% !important;
    color: var(--light);
 }
-
-
-
 
 
 
@@ -562,13 +539,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
-
-
-
-
-
 /*------------------------------------*\
    Footer
 \*------------------------------------*/
@@ -589,11 +559,6 @@ body::-webkit-scrollbar-thumb {
 .super-footer__footnote {
   opacity: 20% !important;
 }
-
-
-
-
-
 
 
 
