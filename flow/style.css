@@ -537,6 +537,21 @@ body {
 
 
 
+/*------------------------------------*\
+   Footer
+\*------------------------------------*/
+
+.notion-embed__container {
+  width: 100% !important;
+}
+
+
+/*Change iframe background color*/
+.notion-embed__container > iframe {
+  background: var(--dark) !important;
+}
+
+
 
 
 /*------------------------------------*\
