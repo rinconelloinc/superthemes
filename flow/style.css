@@ -538,7 +538,7 @@ body {
 
 
 /*------------------------------------*\
-   Footer
+   Embed
 \*------------------------------------*/
 
 .notion-embed__container {
@@ -548,7 +548,7 @@ body {
 
 /*Change iframe background color*/
 .notion-embed__container > iframe {
-  background: var(--dark) !important;
+  background: none !important;
 }
 
 
