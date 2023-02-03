@@ -877,7 +877,14 @@ body::-webkit-scrollbar-thumb {
 }
    
    
+/*------------------------------------*\
+   Gallery (Medium)
+\*------------------------------------*/ 
    
+ /*Adapt all items width to screen all sizes*/
+ .notion-collection-gallery.medium {
+    grid-template-columns: 100% !important;
+}
    
 
    
