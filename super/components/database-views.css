@@ -3,8 +3,6 @@ Database views selector
 Author: Luis Rincon @rinconelloinc
 */ 
 
-
-
 /*------------------------------------*\
    Variables
 \*------------------------------------*/
@@ -12,26 +10,26 @@ Author: Luis Rincon @rinconelloinc
 
 :root {
 /*Main*/
---db-views-background:#1c1c1c;
---db-views-text: #8a8a8a;
+--db-views-background:#1c1c1c !important;
+--db-views-text: #8a8a8a !important;
 
 
 /*Borders*/
---db-views-border: 0px solid #8a8a8a;
---db-views-border-radius: 100px;
+--db-views-border: 1px solid #1c1c1c !important;
+--db-views-border-radius: 8px !important;
 
 /*Spacing & Position*/
---db-views-spacing: 15px;
---db-views-position: center;
+--db-views-spacing: 15px !important;
+--db-views-position: center !important;
 
 
 /*Active tab*/
---db-views-active-background: #1c1c1c;
---db-views-active-text: #fdb933;
+--db-views-active-background: #1c1c1c !important;
+--db-views-active-text: #fdb933 !important;
 
 /*Hover*/
---db-views-hover-background: #1c1c1c;
---db-views-hover-text: #fdb933;
+--db-views-hover-background: #1c1c1c !important;
+--db-views-hover-text: #fdb933 !important;
 
 
 
@@ -40,17 +38,17 @@ Author: Luis Rincon @rinconelloinc
 \*------------------------------------*/
 
 /*Menu closed*/
---db-views-responsive-background: #121212;
---db-views-responsive-text: var(--db-views-text);
---db-views-responsive-arrow: var(--db-views-text);
+--db-views-responsive-background: var(--db-views-background) !important;
+--db-views-responsive-text: var(--db-views-text) !important;
+--db-views-responsive-arrow: var(--db-views-text) !important;
 
 /*Borders*/
---db-views-responsive-border: 3px solid #1c1c1c;
---db-views-responsive-border-radius: 8px;
+--db-views-responsive-border: var(--db-views-border) !important;
+--db-views-responsive-border-radius: var(--db-views-border-radius) !important;
 
 /*Menu open*/
---db-views-responsive-open-background: var(--db-views-responsive-background);
---db-views-responsive-open-text: var(--db-views-text);
+--db-views-responsive-open-background: var(--db-views-responsive-background) !important;
+--db-views-responsive-open-text: var(--db-views-text) !important;
 
 }
 
