@@ -5,37 +5,6 @@ Author: Luis Rincon @rinconelloinc
 
 
 
-  /*Main Colors*/
-  --inc-main: #fdb933 !important;
-  --inc-mainlight: #fdb93321 !important;
-  
-  
-    /*Colors with opacity = (#HEX + Opacity)*/
-  --inc-mainRGBA: #fdb93340 !important; 
-  --inc-darkRGBA: #fdb93380 !important;
-  
-  
-  /*Secondary Colors*/
-  --inc-light: #fddb98 !important;
-  --inc-dark: #161616 !important;
-  --inc-gray: #8a8a8a !important;
-  --inc-medium: #1c1c1c !important;
-  --inc-darkest: #121212 !important;
-  
-  
-    /*Specials*/
-  --inc-mainGLOW: 0px 0px 20px 0.02px var(--inc-mainRGBA) !important;
-  
-  
-  /*Basic Colors*/
-  --inc-white: #ffffff !important;
-  --inc-black: #000000 !important;
-
-
-
-
-
-
 /*------------------------------------*\
    Variables
 \*------------------------------------*/
