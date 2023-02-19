@@ -4,7 +4,91 @@ Author: Luis Rincon @rinconelloinc
 */ 
 
 
-/*-------------------------------------*/
+
+  /*Main Colors*/
+  --inc-main: #fdb933 !important;
+  --inc-mainlight: #fdb93321 !important;
+  
+  
+    /*Colors with opacity = (#HEX + Opacity)*/
+  --inc-mainRGBA: #fdb93340 !important; 
+  --inc-darkRGBA: #fdb93380 !important;
+  
+  
+  /*Secondary Colors*/
+  --inc-light: #fddb98 !important;
+  --inc-dark: #161616 !important;
+  --inc-gray: #8a8a8a !important;
+  --inc-medium: #1c1c1c !important;
+  --inc-darkest: #121212 !important;
+  
+  
+    /*Specials*/
+  --inc-mainGLOW: 0px 0px 20px 0.02px var(--inc-mainRGBA) !important;
+  
+  
+  /*Basic Colors*/
+  --inc-white: #ffffff !important;
+  --inc-black: #000000 !important;
+
+
+
+
+
+
+/*------------------------------------*\
+   Variables
+\*------------------------------------*/
+
+
+:root {
+/*Main*/
+--db-views-background:#1c1c1c;
+--db-views-text: #8a8a8a;
+
+
+/*Borders*/
+--db-views-border: 0px solid #8a8a8a;
+--db-views-border-radius: 100px;
+
+/*Spacing & Position*/
+--db-views-spacing: 15px;
+--db-views-position: center;
+
+
+/*Active tab*/
+--db-views-active-background: #1c1c1c;
+--db-views-active-text: #fdb933;
+
+/*Hover*/
+--db-views-hover-background: #1c1c1c;
+--db-views-hover-text: #fdb933;
+
+
+
+/*------------------------------------*\
+   Responsive
+\*------------------------------------*/
+
+/*Menu closed*/
+--db-views-responsive-background: #121212;
+--db-views-responsive-text: var(--db-views-text);
+--db-views-responsive-arrow: var(--db-views-text);
+
+/*Borders*/
+--db-views-responsive-border: 3px solid #1c1c1c;
+--db-views-responsive-border-radius: 8px;
+
+/*Menu open*/
+--db-views-responsive-open-background: var(--db-views-responsive-background);
+--db-views-responsive-open-text: var(--db-views-text);
+
+}
+
+
+/*------------------------------------*\
+   Desktop
+\*------------------------------------*/
 
 
 /*Hide the header title */
@@ -52,7 +136,7 @@ Author: Luis Rincon @rinconelloinc
 /*Change Position and Layout*/
 .notion-dropdown__option-list {
   display: flex !important; /* ← Flex (Horizontal) Block (Vertical)*/
-  justify-content: center; /* ← Position*/
+  justify-content: var(--db-views-position); /* ← Position*/
   overflow-y: auto;
 }
 
@@ -82,12 +166,12 @@ Author: Luis Rincon @rinconelloinc
 
 /*Items*/
 .notion-dropdown__option {
-  background: var(--inc-medium);
-  margin-right: 15px !important; /* ← Separation between items*/
-  border: 0px solid white;
-  border-radius: 100px !important;
+  background: var(--db-views-background);
+  margin-right: var(--db-views-spacing); /* ← Separation between items*/
+  border: var(--db-views-border);
+  border-radius: var(--db-views-border-radius);
   padding: 14px 20px !important;  /* ← Categories Button size*/
-  color: var(--inc-gray) !important; /* ← Text color*/
+  color: var(--db-views-text); /* ← Text color*/
   font-weight: bold !important;
   opacity: 100% !important;
 }
@@ -99,19 +183,19 @@ Author: Luis Rincon @rinconelloinc
 
 .notion-dropdown__option:hover {
   transition: 0.2s ease-in-out;
-  color: var(--inc-main) !important; /* ← Text color on hover*/
-  background-color: var(--inc-medium) !important; /* ← Background color on hover*/
+  color: var(--db-views-hover-text); /* ← Text color on hover*/
+  background-color: var(--db-views-hover-background); /* ← Background color on hover*/
   opacity: 100% !important;
 }
 
 
 /*Active filter*/
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active {
-  background: var(--inc-medium) !important;
+  background: var(--db-views-active-background);
 }
 
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active p {
-  color: var(--inc-main) !important;
+  color: var(--db-views-active-text);
 }
 
 
@@ -191,16 +275,16 @@ Author: Luis Rincon @rinconelloinc
   display: flex !important;
     justify-content: space-between !important;
     width: 100% !important;   /* ← Space between Text and dropdown icon*/
-    border: 3px solid var(--inc-medium) !important;
+    border: var(--db-views-responsive-border);
     padding: 10px !important;
-    border-radius: 8px !important;
-    background: none !important;
-    color: var(--inc-gray) !important; /*Arrow color */
+    border-radius: var(--db-views-responsive-border-radius);
+    background: var(--db-views-responsive-background);
+    color: var(--db-views-responsive-arrow) !important; /*Arrow color */
 }
 
 .notion-dropdown__button:hover {
-    background-color: var(--inc-dark);
-    border: 3px solid var(--inc-medium) !important;
+    background-color: var(--db-views-responsive-background);
+    border: var(--db-views-responsive-border);
     padding: 10px !important;
 }
 
@@ -208,7 +292,7 @@ Author: Luis Rincon @rinconelloinc
 /*Menu Title*/
 .notion-dropdown__button-title {
     margin: 10 0px !important; /*Separation from left */
-    color: var(--inc-gray) !important; /*Title color*/
+    color: var(--db-views-responsive-text); /*Title color*/
 }
 
 
@@ -227,9 +311,9 @@ Author: Luis Rincon @rinconelloinc
     transform: translate(40%) !important;
     z-index: 40 !important;
     overflow: hidden !important;
-    background: var(--inc-dark) !important;
-    border: 3px solid var(--inc-medium);
-    border-radius: 4px !important;
+    background: var(--db-views-responsive-open-background) !important;
+    border: var(--db-views-responsive-border);
+    border-radius: var(--db-views-responsive-border-radius);
     position: absolute !important;
     min-width: 100% !important;  /* ← Menu Width*/
     max-width: 100% !important;
@@ -238,7 +322,7 @@ Author: Luis Rincon @rinconelloinc
 }
 .notion-dropdown__menu {
     width: 100% !important;
-    border-radius: 8px!important;
+    border-radius: var(--db-views-responsive-border-radius);
     transform: none !important;
     left: auto !important;
     top: auto !important;
@@ -270,7 +354,7 @@ Author: Luis Rincon @rinconelloinc
   display: block !important; /* ← Flex (Horizontal) Block (Vertical)*/
   padding: 5px !important;
   flex-wrap: wrap!important;
-  background: var(--inc-dark) !important;
+  background: var(--db-views-responsive-open-background);
 }
 
 
@@ -288,8 +372,8 @@ Author: Luis Rincon @rinconelloinc
 
 .notion-dropdown__option:hover {
   transition: 0.2s ease-in-out;
-  color: var(--inc-main);
-  background: #1c1c1c;
+  color: var(--db-views-hover-text);
+  background: var(--db-views-hover-background);
   opacity: 100%;
 }
 
@@ -303,7 +387,7 @@ Author: Luis Rincon @rinconelloinc
 }
 
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active p {
-  color: var(--inc-main) !important;
+  color: var(--db-views-active-text);
 }
 
 
