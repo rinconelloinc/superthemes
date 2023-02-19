@@ -152,8 +152,9 @@ Author: Luis Rincon @rinconelloinc
 
 .notion-dropdown__option:hover {
   transition: 0.2s ease-in-out;
-  color: var(--db-views-hover-text); /* ← Text color on hover*/
-  background: var(--db-views-hover-background); /* ← Background color on hover*/
+  color: var(--db-views-hover-text) !important; /* ← Text color on hover*/
+  background: var(--db-views-hover-background) !important; /* ← Background color on hover*/
+  background-color: var(--db-views-hover-background) !important; /* ← Background color on hover*/
   opacity: 100% !important;
 }
 
