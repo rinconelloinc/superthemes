@@ -1,0 +1,367 @@
+
+
+
+
+/*Hide database title*/
+#page-index .notion-header__title {
+  display: none !important;
+}
+
+/*Disable icons on inner pages*/
+.notion-header__icon-wrapper {
+  display: none !important;
+}
+
+
+
+
+
+
+
+/*------------------------------------*\
+   Property
+\*------------------------------------*/
+
+/*Header property styling*/
+#page-index .notion-pill {
+  font-size: 11pt;
+  padding: 10px !important;
+  font-weight: bold !important;
+}
+
+/*Align property to center*/
+.notion-collection-board__column-header {
+  text-align: center !important;
+}
+
+/*Hide "Skills" property at the top*/
+#page-index .pill-gray {
+  opacity: 0% !important;
+  cursor: default !important;
+}
+
+
+
+
+
+/*------------------------------------*\
+   Board
+\*------------------------------------*/
+
+
+.notion-collection-board {
+  justify-content: center !important;
+  
+/*Remove line at the top*/
+  border-top: none !important;
+  
+/*Hide the beige line at the board bottom end*/
+  overflow-x: inherit;
+  
+}
+
+
+
+/*------------------------------------*/
+
+
+
+/*Spacing*/
+.super-content,.notion-collection-board {
+    padding-bottom: 1vh !important;
+    padding-top: 0vh !important;
+}
+
+/*Top spacing*/
+#page-index .notion-header {
+  display: none !important;
+}
+
+#page-index .super-content-wrapper {
+  margin-top: -30px !important;
+}
+
+
+
+/*------------------------------------*\
+   Cards
+\*------------------------------------*/
+
+
+/*Cards size*/
+.notion-collection-board__column {
+    width: 230px !important;
+    padding: 10px !important;
+}
+
+/*Spacing between cards*/
+.notion-collection-board {
+  gap:50px !important
+}
+
+
+/*Hide cards content*/
+.board .notion-collection-card__content {
+  display: none !important;
+} 
+
+
+
+
+/*------------------------------------*\
+   Subpages Cards Descriptions
+\*------------------------------------*/
+
+
+/*Display full content in Description*/
+.notion-collection-gallery .notion-collection-card__property .notion-semantic-string {
+    white-space: unset !important;
+  }
+
+
+/*Full width on description property*/
+.notion-collection-gallery .notion-collection-card__content .notion-property__text {
+  min-width: 100% !important;
+}
+
+
+
+
+/*************************************************************
+**************************************************************
+*************************************************************/
+
+
+
+
+
+/*------------------------------------*\
+   RESPONSIVE - Mobile
+\*------------------------------------*/
+
+@media (min-width: 300px) and (max-width: 546px) {
+  
+  
+  
+/*------------------------------------*\
+   Sub-pages Titles
+\*------------------------------------*/
+  
+
+/*Font Size*/
+.notion-header__title {
+  font-size: 20pt !important;
+}
+
+/*Top spacing*/
+.notion-header__title-wrapper {
+  margin-top: 40px !important;
+}
+
+
+/*Spacing*/
+.super-content,.notion-collection-board {
+    padding-bottom: 0vh !important;
+}
+
+
+#page-index .super-content-wrapper {
+  margin-top: 3px !important;
+  margin-bottom: 0px !important;
+}  
+
+
+
+ /*------------------------------------*\
+   Board
+\*------------------------------------*/
+
+/*Board alignment*/
+.notion-collection-board {
+  justify-content: left !important;
+}
+
+
+
+  
+/*------------------------------------*\
+   Cards
+\*------------------------------------*/
+  
+  
+/*Cards size*/
+.notion-collection-board__column {
+    width: 160px !important;
+    padding: 0px !important;
+}
+  
+  
+.notion-collection-card__cover.small {
+  min-height: 84.5px !important;
+  height: 80px !important;
+}
+  
+/*Spacing between cards*/
+.notion-collection-board {
+  gap: 0px !important
+}
+  
+  
+
+
+} /* ← End of responsive, do not delete */
+
+
+
+
+
+
+
+
+
+
+
+/*************************************************************
+**************************************************************
+*************************************************************/
+
+
+
+
+
+
+
+/*------------------------------------*\
+   RESPONSIVE - iPad 1
+\*------------------------------------*/
+
+@media (min-width: 547px) and (max-width: 680px) {
+
+
+ /*------------------------------------*\
+   Board
+\*------------------------------------*/
+
+/*Board alignment*/
+.notion-collection-board {
+  justify-content: left !important;
+}
+
+
+/*------------------------------------*/
+
+
+/*Spacing*/
+#page-index .super-content-wrapper {
+  margin-top: 5px !important;
+  margin-left: -60px !important;
+  margin-right: -60px !important;
+  margin-bottom: 30px !important;
+}
+
+  
+/*------------------------------------*\
+   Cards
+\*------------------------------------*/
+  
+  
+/*Cards size*/
+.notion-collection-board__column {
+    width: 160px !important;
+    padding: 0px !important;
+}
+  
+  
+.notion-collection-card__cover.small {
+  min-height: 50px !important;
+  height: 80px !important;
+}
+  
+/*Spacing between cards*/
+.notion-collection-board {
+  gap: 0px !important
+}
+
+
+
+
+} /* ← End of responsive, do not delete */
+
+
+
+
+
+
+
+/*************************************************************
+**************************************************************
+*************************************************************/
+
+
+
+
+
+
+
+/*------------------------------------*\
+   RESPONSIVE - iPad 2
+\*------------------------------------*/
+
+@media (min-width: 681px) and (max-width: 900px) {
+
+
+ /*------------------------------------*\
+   Board
+\*------------------------------------*/
+
+/*Board alignment*/
+.notion-collection-board {
+  -webkit-box-pack: start !important;
+   justify-content: start !important;
+}
+
+
+/*------------------------------------*/
+
+
+/*Spacing*/
+#page-index .super-content-wrapper {
+  margin-top: -35px !important;
+  margin-left: -60px !important;
+  margin-right: -60px !important;
+  margin-bottom: 30px !important;
+}
+
+#page-index.super-root {
+  min-width: 1320px !important;
+}
+
+
+  
+/*------------------------------------*\
+   Cards
+\*------------------------------------*/
+  
+  
+/*Cards size*/
+.notion-collection-board__column {
+    width: 250px !important;
+    padding: 0px !important;
+}
+  
+  
+.notion-collection-card__cover.small {
+  min-height: 50px !important;
+  height: 110px !important;
+}
+  
+/*Spacing between cards*/
+.notion-collection-board {
+  gap: 90px !important;
+  -webkit-gap: 90px !important;
+}
+
+
+
+
+} /* ← End of responsive, do not delete */
