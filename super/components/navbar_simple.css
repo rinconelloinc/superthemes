@@ -16,7 +16,7 @@
   --navbar-button-text-color: #161616 !important;
   --navbar-button-background-color: #fdb963 !important;
   --navbar-button-border: none !important;
-  --navbar-button-border-radii: 8px !important;
+  --navbar-button-border-radius: 8px !important;
 
   
   /*Responsive Menu*/
@@ -45,7 +45,7 @@
  color: var(--navbar-button-text-color);
  background: var(--navbar-button-background-color);
  border: var(--navbar-button-border);
- border-radius: var(--navbar-button-border-radii);
+ border-radius: var(--navbar-button-border-radius);
 }
 
 .super-navbar.simple .super-navbar__button {
@@ -56,5 +56,5 @@
 /*Reduce Content width*/
 .super-navbar.simple .super-navbar__content {
   max-width: var(--navbar-width);
-  margin: auto !important;
+  margin: var(--navbar-margin);
 }
