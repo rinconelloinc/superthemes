@@ -1,0 +1,60 @@
+/*------------------------------------*\
+  Navbar - Simple
+\*------------------------------------*/
+
+:root {
+/*General*/
+  --navbar-height: 70px !important;
+  --navbar-width: 800px !important;
+  --navbar-text-color: #ffffff !important;
+  --navbar-background-color: #161616 !important;
+  --navbar-shadow: rgba(22, 22, 22, 0.12) 0px 10px 20px -6px !important;
+  
+  
+  /*Button*/
+  --navbar-button-text-weight: bold !important;
+  --navbar-button-text-color: #161616 !important;
+  --navbar-button-background-color: #fdb963 !important;
+  --navbar-button-border: none !important;
+  --navbar-button-border-radii: 8px !important;
+
+  
+  /*Responsive Menu*/
+  --navbar-menu-icon-color: var(--navbar-text-color);
+  --navbar-menu-background-color: var(--navbar-background-color) !important;
+  
+ 
+  /*Margin*/
+  --navbar-margin: auto !important;
+}
+
+
+/*------------------------------------*/
+
+/*General*/
+.super-navbar.simple {
+ height: var(--navbar-height);
+ color: var(--navbar-text-color);
+ background: var(--navbar-background-color);
+ box-shadow: var(--navbar-shadow);
+}
+
+/*CTA Button*/
+.super-navbar.simple .super-navbar__cta {
+ font-weight: var(--navbar-button-text-weight);
+ color: var(--navbar-button-text-color);
+ background: var(--navbar-button-background-color);
+ border: var(--navbar-button-border);
+ border-radius: var(--navbar-button-border-radii);
+}
+
+.super-navbar.simple .super-navbar__button {
+    color: var(--navbar-menu-icon-color);
+}
+
+
+/*Reduce Content width*/
+.super-navbar.simple .super-navbar__content {
+  max-width: var(--navbar-width);
+  margin: auto !important;
+}
