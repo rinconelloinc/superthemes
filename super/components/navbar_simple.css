@@ -20,7 +20,7 @@
 
   
   /*Responsive Menu*/
-  --navbar-menu-icon-color: var(--navbar-text-color);
+  --navbar-menu-icon-color: var(--navbar-text-color) !important;
   --navbar-menu-background-color: var(--navbar-background-color) !important;
   
  
