@@ -1,0 +1,113 @@
+/* Footer - Floating by @rinconelloinc */
+
+:root {
+    /*Main colors*/
+    --footer-text-color: #161616 !important;
+    --footer-background-color: #F0F3F4 !important;
+    
+    /*Width*/
+    --footer-floating-width: 60% !important;
+    --footer-width-responsive: 90% !important;
+    
+    /*icons*/
+    --footer-icons-colors: #161616 !important;
+    --footer-icons-gap: 20px !important;
+    --footer-icons-hover: #fdb933 !important;
+    
+    /*Linked Text*/
+    --footer-links-size: 16px !important;
+    --footer-links-colors: #161616 !important;
+    --footer-links-weight: bold !important;
+    --footer-links-gap: 20px !important;
+    --footer-links-align: auto !important;
+    --footer-links-hover: #fdb933 !important;
+    
+    /*Footnote*/
+    --footer-footnote-color: #161616 !important;
+    --footer-footnote-size: var(--footer-links-size);
+    --footer-footnote-align: center !important;
+}
+
+
+/*-------------------------------------*/
+
+
+/*Resize width*/
+.super-footer.floating {
+  width: var(--footer-floating-width);
+  margin: auto !important;
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+/*ICONS*/
+/*Separate icons*/
+.super-footer__icons {
+  gap: var(--footer-icons-gap);
+  color: var(--footer-icons-colors);
+}
+
+
+/*Recolor icons*/
+.super-footer__icons .notion-link:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--footer-icons-hover);
+}
+
+/*-------------------------------------*/
+
+/*LINKS*/
+.super-footer__links {
+  color: var(--footer-links-colors);
+  font-size: var(--footer-links-size);
+  font-weight: var(--footer-links-weight);
+  gap: var(--footer-links-gap) !important;
+  margin: var(--footer-links-align);
+}
+
+/*Hover links*/
+.super-footer__links .notion-link:hover {
+  transition: 0.2s ease-in-out;
+  color: var(--footer-links-hover);
+}
+
+
+/*-------------------------------------*/
+
+/*FOOTNOTE*/
+.super-footer__footnote {
+  color: var(--footer-footnote-color);
+  text-align: var(--footer-footnote-align);
+  font-size: var(--footer-footnote-size);
+}
+
+
+/*-------------------------------------*/
+/*-------------------------------------*/
+/*-------------------------------------*/
+
+
+/*RESPONSIVE*/
+@media only screen and (max-width: 600px) {
+  
+  /*Resize width*/
+.super-footer.floating {
+  width: var(--footer-width-responsive);
+}
+  
+
+/*Logo*/
+.super-footer__logo {
+  margin: auto !important;
+  margin-bottom: 10px !important;
+}
+  
+  
+/*Icons*/
+.super-footer__icons {
+margin: auto !important;
+padding-bottom: 20px !important;
+}
+
+  
+}/* ← DO NOT DELETE*/
