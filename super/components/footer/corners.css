@@ -7,8 +7,7 @@
     
     /*Width*/
     --footer-corners-width: 80px 300px !important;
-    --footer-width-responsive: 90% !important;
-    
+
     /*icons*/
     --footer-icons-colors: #161616 !important;
     --footer-icons-gap: 20px !important;
@@ -85,11 +84,11 @@
 
 
 /*RESPONSIVE*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   
   /*Resize width*/
 .super-footer.corners {
-  width: var(--footer-width-responsive);
+  padding: 50px !important;
 }
   
 
@@ -104,6 +103,14 @@
 .super-footer__icons {
 margin: auto !important;
 padding-bottom: 20px !important;
+}
+
+
+.super-footer.corners .super-footer__links {
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: center !important;
+  gap: 10px !important;
 }
 
   
