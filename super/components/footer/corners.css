@@ -2,14 +2,13 @@
 
 :root {
     /*Main colors*/
-    --footer-text-color: #161616 !important;
     --footer-background-color: #F0F3F4 !important;
     
     /*Width*/
     --footer-corners-width: 80px 450px !important;
 
     /*icons*/
-    --footer-icons-colors: #161616 !important;
+    --footer-icons-colors: green !important;
     --footer-icons-gap: 30px !important;
     --footer-icons-hover: #fdb933 !important;
     
