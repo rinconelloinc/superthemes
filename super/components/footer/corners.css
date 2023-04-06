@@ -38,6 +38,7 @@
 
 /*ICONS*/
 /*Separate icons*/
+.super-footer.corners
 .super-footer__icons {
   gap: var(--footer-icons-gap) !important;
   color: var(--footer-icons-colors) !important;
@@ -45,7 +46,9 @@
 
 
 /*Recolor icons*/
-.super-footer__icons .notion-link:hover {
+.super-footer.corners
+.super-footer__icons
+.notion-link:hover {
   transition: 0.2s ease-in-out  !important;
   color: var(--footer-icons-hover) !important;
 }
@@ -53,6 +56,7 @@
 /*-------------------------------------*/
 
 /*LINKS*/
+.super-footer.corners
 .super-footer__links {
   color: var(--footer-links-colors) !important;
   font-size: var(--footer-links-size) !important;
@@ -62,7 +66,9 @@
 }
 
 /*Hover links*/
-.super-footer__links .notion-link:hover {
+.super-footer.corners
+.super-footer__links
+.notion-link:hover {
   transition: 0.2s ease-in-out;
   color: var(--footer-links-hover) !important;
 }
@@ -71,6 +77,7 @@
 /*-------------------------------------*/
 
 /*FOOTNOTE*/
+.super-footer.corners
 .super-footer__footnote {
   color: var(--footer-footnote-color) !important;
   text-align: var(--footer-footnote-align) !important;
@@ -93,6 +100,7 @@
   
 
 /*Logo*/
+.super-footer.corners
 .super-footer__logo {
   margin: auto !important;
   margin-bottom: 10px !important;
