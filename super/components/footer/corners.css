@@ -6,7 +6,7 @@
     --footer-background-color: #F0F3F4 !important;
     
     /*Width*/
-    --footer-corners-width: 80px 300px !important;
+    --footer-corners-width: 80px 450px !important;
 
     /*icons*/
     --footer-icons-colors: #161616 !important;
@@ -33,7 +33,7 @@
 
 /*Resize width*/
 .super-footer.corners {
-  padding: var(--footer-corners-width) !important;
+  padding: var(--footer-corners-width) ;
 } 
 
 /*ICONS*/
