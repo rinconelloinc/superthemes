@@ -39,32 +39,32 @@
 /*ICONS*/
 /*Separate icons*/
 .super-footer__icons {
-  gap: var(--footer-icons-gap);
-  color: var(--footer-icons-colors);
+  gap: var(--footer-icons-gap) !important;
+  color: var(--footer-icons-colors) !important;
 }
 
 
 /*Recolor icons*/
 .super-footer__icons .notion-link:hover {
-  transition: 0.2s ease-in-out;
-  color: var(--footer-icons-hover);
+  transition: 0.2s ease-in-out  !important;
+  color: var(--footer-icons-hover) !important;
 }
 
 /*-------------------------------------*/
 
 /*LINKS*/
 .super-footer__links {
-  color: var(--footer-links-colors);
-  font-size: var(--footer-links-size);
-  font-weight: var(--footer-links-weight);
+  color: var(--footer-links-colors) !important;
+  font-size: var(--footer-links-size) !important;
+  font-weight: var(--footer-links-weight) !important;
   gap: var(--footer-links-gap) !important;
-  margin: var(--footer-links-align);
+  margin: var(--footer-links-align) !important;
 }
 
 /*Hover links*/
 .super-footer__links .notion-link:hover {
   transition: 0.2s ease-in-out;
-  color: var(--footer-links-hover);
+  color: var(--footer-links-hover) !important;
 }
 
 
@@ -72,9 +72,9 @@
 
 /*FOOTNOTE*/
 .super-footer__footnote {
-  color: var(--footer-footnote-color);
-  text-align: var(--footer-footnote-align);
-  font-size: var(--footer-footnote-size);
+  color: var(--footer-footnote-color) !important;
+  text-align: var(--footer-footnote-align) !important;
+  font-size: var(--footer-footnote-size) !important;
 }
 
 
