@@ -18,6 +18,7 @@ Author: Luis Rincon @rinconelloinc
 --db-views-border: 2px solid #1c1c1c !important;
 --db-views-border-radius: 8px !important;
 
+   
 /*Spacing & Position*/
 --db-views-spacing: 15px !important;
 --db-views-position: center !important;
@@ -28,9 +29,11 @@ Author: Luis Rincon @rinconelloinc
 --db-views-active-text: #fdb933 !important;
 --db-views-active-border: 2px solid #fdb933 !important;
 
+   
 /*Hover*/
 --db-views-hover-background: #1c1c1c !important;
 --db-views-hover-text: #fdb933 !important;
+--db-views-hover-border: 2px solid #fdb933 !important;
 
 
 
@@ -154,6 +157,7 @@ Author: Luis Rincon @rinconelloinc
   color: var(--db-views-hover-text) !important; /* ← Text color on hover*/
   background: var(--db-views-hover-background) !important; /* ← Background color on hover*/
   background-color: var(--db-views-hover-background) !important; /* ← Background color on hover*/
+  border: var(--db-views-hover-border) !important;
   opacity: 100% !important;
 }
 
