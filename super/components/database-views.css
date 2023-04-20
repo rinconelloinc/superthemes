@@ -348,7 +348,8 @@ Author: Luis Rincon @rinconelloinc
 .notion-dropdown__option:hover {
   transition: 0.2s ease-in-out;
   color: var(--db-views-hover-text);
-  background: var(--db-views-hover-background);
+  background: none !important;
+  border: none !important;
   opacity: 100%;
 }
 
@@ -359,10 +360,12 @@ Author: Luis Rincon @rinconelloinc
 /*Active filter*/
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active {
   background: none !important;
+  border: none !important;
 }
 
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active p {
   background: none !important;
+  border: none !important;
   color: var(--db-views-active-text);
 }
 
