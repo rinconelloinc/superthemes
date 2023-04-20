@@ -10,7 +10,7 @@ Author: Luis Rincon @rinconelloinc
 
 :root {
 /*Main*/
---db-views-background:#1c1c1c !important;
+--db-views-background: #1c1c1c !important;
 --db-views-text: #8a8a8a !important;
 
 
@@ -26,6 +26,7 @@ Author: Luis Rincon @rinconelloinc
 /*Active tab*/
 --db-views-active-background: #1c1c1c !important;
 --db-views-active-text: #fdb933 !important;
+--db-views-active-border: #fdb933 !important;
 
 /*Hover*/
 --db-views-hover-background: #1c1c1c !important;
@@ -160,6 +161,7 @@ Author: Luis Rincon @rinconelloinc
 /*Active filter*/
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active {
   background: var(--db-views-active-background);
+  border: var(--db-views-active-border);
 }
 
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active p {
@@ -333,6 +335,7 @@ Author: Luis Rincon @rinconelloinc
     cursor: pointer !important;
     padding: 5px 16px !important; /* ← Separation between Notion Views items*/
     height: 50px !important;
+    border: none !important;
     border-radius: 0px !important;
     background: none !important;
 }
@@ -355,6 +358,7 @@ Author: Luis Rincon @rinconelloinc
 }
 
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active p {
+  background: none !important;
   color: var(--db-views-active-text);
 }
 
