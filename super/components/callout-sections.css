@@ -1,0 +1,301 @@
+/*------------------------------------*\
+   Callouts as sections
+\*------------------------------------*/
+
+
+:root {
+  --layout-max-width: 1100px !important;
+  --inner-callout-radius: 8px !important;
+  --inner-callout-padding: 1rem 1.8rem 0.8rem 0.5rem !important;
+  
+  
+  /*Inside Callout colors*/
+  
+  /*Default*/
+  --inner-default-bg: #ffffff !important;
+  --inner-default-text: black !important;
+  --inner-default-border: none !important;
+ 
+  /*Gray*/
+  --inner-gray-bg: #b2b2b2 !important;
+  --inner-gray-text: black !important;
+  --inner-gray-border: none !important;
+  
+  
+  /*Brown*/
+  --inner-brown-bg: #a67c52 !important;
+  --inner-brown-text: white !important;
+  --inner-brown-border: none !important;
+  
+  /*Orange*/
+  --inner-orange-bg: #f79420 !important;
+  --inner-orange-text: white !important;
+  --inner-orange-border: none !important;
+
+  /*Yellow*/
+  --inner-yellow-bg: #fdb933 !important;
+  --inner-yellow-text: black !important;
+  --inner-yellow-border: none !important;
+
+  /*Green*/
+  --inner-green-bg: #7ec247 !important;
+  --inner-green-text: black !important;
+  --inner-green-border: none !important;
+  
+  /*Blue*/
+  --inner-blue-bg: #29aae2 !important;
+  --inner-blue-text: black !important;
+  --inner-blue-border: none !important;
+  
+  
+  --inner-purple-bg: #93288d !important;
+  --inner-purple-text: white !important;
+  --inner-purple-border: none !important;
+  
+  /*Pink*/
+  --inner-pink-bg: #f27aaa !important;
+  --inner-pink-text: white !important;
+  --inner-pink-border: none !important;
+  
+  /*Red*/
+  --inner-red-bg: #ed2024 !important;
+  --inner-red-text: white !important;
+  --inner-red-border: none !important;
+}
+
+
+/*----------------------*/
+
+
+/*Notion Header*/
+.notion-header {
+    max-width: var(--layout-max-width);
+    margin: auto !important;
+}
+
+
+/*Content*/
+.super-content {
+  max-width: var(--layout-max-width);
+  margin: auto !important;
+}
+
+
+/*------------------------------------*\
+   Callouts re-Styling
+\*------------------------------------*/
+
+
+/*White*/
+.notion-callout {
+	background: var(--inner-default-bg);
+	color: var(--inner-default-text);
+	border: var(--inner-default-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Gray*/
+.notion-callout.bg-gray-light {
+	background: var(--inner-gray-bg);
+	color: var(--inner-gray-text);
+	border: var(--inner-gray-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Brown*/
+.notion-callout.bg-brown-light {
+	background: var(--inner-brown-bg);
+	color: var(--inner-brown-text);
+	border: var(--inner-brown-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Orange*/
+.notion-callout.bg-orange-light {
+	background: var(--inner-orange-bg);
+	color: var(--inner-orange-text);
+	border: var(--inner-orange-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Yellow*/
+.notion-callout.bg-yellow-light {
+	background: var(--inner-yellow-bg);
+	color: var(--inner-yellow-text);
+	border: var(--inner-yellow-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Green*/
+.notion-callout.bg-green-light {
+	background: var(--inner-green-bg);
+	color: var(--inner-green-text);
+	border: var(--inner-green-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Blue*/
+.notion-callout.bg-blue-light {
+	background: var(--inner-blue-bg);
+	color: var(--inner-blue-text);
+	border: var(--inner-blue-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Purple*/
+.notion-callout.bg-purple-light {
+	background: var(--inner-purple-bg);
+	color: var(--inner-purple-text);
+	border: var(--inner-purple-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Pink*/
+.notion-callout.bg-pink-light {
+	background: var(--inner-pink-bg);
+	color: var(--inner-pink-text);
+	border: var(--inner-pink-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+/*Red*/
+.notion-callout.bg-red-light {
+	background: var(--inner-red-bg);
+	color: var(--inner-red-text);
+	border: var(--inner-red-border) !important;
+	border-radius: var(--inner-callout-radius);
+	padding: var(--inner-callout-padding);
+}
+
+
+
+/*------------------------------------*\
+   Full width section code by Super.so
+\*------------------------------------*/
+
+
+body {
+    overflow-x: hidden !important;
+}
+
+
+/*Default Callouts → White*/
+
+.notion-root>div[class^='notion-callout'] {
+    border-radius: 0px !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    position: relative !important;
+    margin: 0 !important;
+    margin-left: -50vw !important;
+    left: 50% !important;
+    padding: 50px 0px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+    border: 0 !important;
+}
+
+
+.notion-root>div[class^='notion-callout']>.notion-callout__icon {
+    display: none !important;
+}
+
+.notion-root>div[class^='notion-callout']>.notion-callout__icon {
+    width: var(--layout-max-width) !important;
+    max-width: var(--layout-max-width) !important;
+    padding-left: var(--padding-left) !important;
+    padding-right: var(--padding-right) !important;
+    margin: 0 auto !important;
+}
+
+.notion-root>div[class^='notion-callout']>.notion-callout__content {
+    margin-inline-start: 0 !important;
+    max-width: var(--layout-max-width) !important;
+    padding-left: var(--padding-left) !important;
+    padding-right: var(--padding-right) !important;
+    margin: 0 auto !important;
+}
+
+
+@media all and (max-width: 600px) {
+    .notion-root>div[class^='notion-callout']>.notion-callout__content {
+        padding-left: var(--padding-left-mobile) !important;
+        padding-right: var(--padding-right-mobile) !important;
+    }
+
+    .notion-root>div[class^='notion-callout']>.notion-callout__icon {
+        padding-left: var(--padding-left-mobile) !important;
+        padding-right: var(--padding-right-mobile) !important;
+    }
+}
+
+
+
+
+/*Colored Callouts*/
+
+.notion-root>div[class^='notion-callout bg-'] {
+    border-radius: 0px !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    position: relative !important;
+    margin: 0 !important;
+    margin-left: -50vw !important;
+    left: 50% !important;
+    padding: 50px 0px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+    border: 0 !important;
+}
+
+.notion-root>div[class^='notion-callout bg-']>.notion-callout__icon {
+    display: none !important;
+}
+
+.notion-root>div[class^='notion-callout bg-']>.notion-callout__icon {
+    width: var(--layout-max-width) !important;
+    max-width: var(--layout-max-width) !important;
+    padding-left: var(--padding-left) !important;
+    padding-right: var(--padding-right) !important;
+    margin: 0 auto !important;
+}
+
+.notion-root>div[class^='notion-callout bg-']>.notion-callout__content {
+    margin-inline-start: 0 !important;
+    max-width: var(--layout-max-width) !important;
+    padding-left: var(--padding-left) !important;
+    padding-right: var(--padding-right) !important;
+    margin: 0 auto !important;
+}
+
+@media all and (max-width: 600px) {
+    .notion-root>div[class^='notion-callout bg-']>.notion-callout__content {
+        padding-left: var(--padding-left-mobile) !important;
+        padding-right: var(--padding-right-mobile) !important;
+    }
+
+    .notion-root>div[class^='notion-callout bg-']>.notion-callout__icon {
+        padding-left: var(--padding-left-mobile) !important;
+        padding-right: var(--padding-right-mobile) !important;
+    }
+}
