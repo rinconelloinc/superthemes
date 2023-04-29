@@ -91,7 +91,7 @@
 	background: var(--inner-default-bg);
 	color: var(--inner-default-text);
 	border: var(--inner-default-border) !important;
-	border-radius: var(--inner-callout-radius);
+	border-radius: var(--inner-callout-radius) !important;
 	padding: var(--inner-callout-padding);
 }
 
