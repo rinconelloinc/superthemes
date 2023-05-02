@@ -1,0 +1,73 @@
+/*---------------------------------*\
+   Toggle Tabs
+\*---------------------------------*/
+
+
+:root {
+  /*Closed Styling*/
+  --toggle-bg: #161616 !important;
+  --toggle-text: #ffffff !important;
+  --toggle-border: 0px solid #fdb933 !important;
+  --toggle-radius: 10px !important;
+
+
+  /*Open Styling*/
+  --toggle-open-bg: #282828 !important;
+  --toggle-open-text: #fdb933 !important;
+  --toggle-open-border: 2px solid #fdb933 !important;
+
+
+  /*Hover*/
+  --toggle-hover-bg: #282828 !important;
+
+
+  /*Spacing*/
+  --toggle-padding:20px !important;
+  --toggle-space-between: 10px !important;
+}
+
+
+
+/*-------------------------------------*/
+
+
+
+/*Toggle - customization*/
+.notion-toggle {
+  background: var(--toggle-bg);
+  color: var(--toggle-text);
+  padding: var(--toggle-padding);
+  border-radius: var(--toggle-radius);
+  margin: var(--toggle-space-between);
+  transition: 0.2s ease-in-out !important;
+}
+
+.notion-toggle:hover {
+  background: var(--toggle-hover-bg);
+}
+
+/*----------------------*/
+
+
+/*OPEN - Toggle customization*/
+.notion-toggle.open {
+  background: var(--toggle-open-bg);
+  outline: var(--toggle-open-border);
+}
+
+
+/*Colorize arrow when open*/
+  .notion-toggle.open
+  .notion-toggle__trigger {
+  color: var(--toggle-open-text);
+}
+
+
+/*----------------------*/
+
+
+/*Disable hover on the trigger*/
+.notion-toggle__trigger_icon:hover {
+    background: none !important;
+}
+
