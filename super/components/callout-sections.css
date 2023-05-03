@@ -8,7 +8,7 @@
   --inner-callout-radius: 8px !important;
 
 
-  /*Show Callout icons*/
+  /*Hide Callout icons*/
   --callout-icon-display: none !important;
   --inner-callout-padding: 0.8rem 1.8rem 0.8rem 1.8rem !important;
   
