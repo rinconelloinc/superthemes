@@ -6,10 +6,12 @@
 :root {
   --layout-max-width: 1100px !important;
   --inner-callout-radius: 8px !important;
-  --inner-callout-padding: 0.8rem 1.8rem 0.8rem 1.8rem !important;
-  
+
+
   /*Show or Hide callout icon*/
   --callout-icon-display: none !important;
+  --inner-callout-padding: 0.8rem 1.8rem 0.8rem 1.8rem !important;
+  
   
   /*Space between columns*/
   --col-spacing-hor: 20px !important;
