@@ -81,6 +81,10 @@
   margin: auto !important;
 }
 
+.notion-callout__content {
+  margin-inline-start: 0px !important;
+}
+
 
 /*------------------------------------*\
    Callouts re-Styling
