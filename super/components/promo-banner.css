@@ -1,0 +1,58 @@
+/*---------------------------------*\
+   Promo Banner
+\*---------------------------------*/
+
+:root {
+  --promo-banner-bg: #fdb933 !important;
+  --promo-banner-color: #161616 !important;
+  --promo-banner-font: Space Grotesk !important;
+  --promo-banner-font-size: 10pt !important;
+  --promo-button-hover: #ffffff !important;
+}
+
+
+
+/*Banner*/
+.promo-banner {
+    /*Colors*/
+    background: var(--promo-banner-bg);
+    color: var(--promo-banner-color);
+    padding: 10px!important;
+    
+    /*Font*/
+    font-weight: bold !important;
+    font-family: var(--promo-banner-font);
+    font-size: var(--promo-banner-font-size);
+    
+    /*Alignment*/
+    justify-content: center !important;
+    text-align: center !important;
+    letter-spacing: 1.8px !important;
+}
+
+
+/*----------------------*/
+
+
+/*Button*/
+.promo-button {
+  /*Colors*/
+  background: none !important;
+  color: #161616 !important;
+  
+  /*Spacing*/
+  padding: 0px !important;
+  border-radius: 0px !important;
+  
+  /*Others*/
+  cursor: pointer !important;
+  text-decoration: none !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+
+/*Button - Hover*/
+.promo-button:hover {
+  color: var(--promo-button-hover) !important;
+}
+
