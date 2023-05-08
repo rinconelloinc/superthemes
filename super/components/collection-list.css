@@ -1,0 +1,82 @@
+/*------------------------------------*\
+   Collection List Database
+\*------------------------------------*/
+
+:root {
+  /*Colors*/
+  --list-bg: none !important;
+  --list-color: none !important;
+  --list-border: 1px solid #d4d4d4 !important;
+  
+  /*Space*/
+  --list-space-between: 0px !important;
+  --list-padding: 15px 10px !important;
+  --list-radius: 10px !important;
+  
+  /*Others*/
+  --list-title: bold !important; 
+  --list-hover: #efefef !important;
+}
+
+
+/*----------------------*/
+
+/*Main*/
+.notion-collection-list {
+  gap: var(--list-space-between) !important;
+  padding: 0px !important;
+  border-top: var(--list-border) !important;
+  background: var(--list-bg) !important;
+  color: var(--list-color) !important;
+}
+  
+/*Title weight*/
+.notion-collection-list
+.notion-property__title * {
+  font-weight: var(--list-title) !important;
+}
+
+/*Others*/
+.notion-collection-list__item
+.notion-property__title
+.notion-semantic-string > span {
+  border: 0px !important; }
+
+
+/*----------------------*/
+
+
+
+/*Items*/
+.notion-collection-list__item {
+  padding: var(--list-padding) !important; 
+  margin: 0px !important;
+  border-top: none !important;
+  border-bottom: var(--list-border) !important;
+  border-radius: 0px !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+/*Hover*/
+.notion-collection-list__item:hover {
+  background: var(--list-hover) !important;
+}
+
+
+
+/*----------------------*/
+
+
+
+/*Disable border bottom from first item*/
+.notion-collection-list__item:first-child {
+  border-bottom: var(--list-border) !important;
+}
+
+/*Description text length*/
+.notion-collection-list__item-property
+.notion-property__text {
+  max-width: 100% !important;
+  font-size: 1rem !important;
+}
+
