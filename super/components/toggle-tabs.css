@@ -1,3 +1,8 @@
+/*
+Toggle Tabs
+Author: Luis Rincon @rinconelloinc
+*/ 
+
 /*---------------------------------*\
    Toggle Tabs
 \*---------------------------------*/
@@ -14,16 +19,18 @@
   /*Open Styling*/
   --toggle-open-bg: #282828 !important;
   --toggle-open-text: #fdb933 !important;
-  --toggle-open-border: 2px solid #fdb933 !important;
+  --toggle-open-border: 0px solid #fdb933 !important;
 
 
   /*Hover*/
   --toggle-hover-bg: #282828 !important;
+  --toggle-hover-text: #fdb933 !important;
+  --toggle-hover-border: 3px solid #fdb933 !important;
 
 
   /*Spacing*/
-  --toggle-padding:20px !important;
-  --toggle-space-between: 10px !important;
+  --toggle-padding:10px !important;
+  --toggle-space-between: 8px !important;
 }
 
 
@@ -39,21 +46,61 @@
   padding: var(--toggle-padding);
   border-radius: var(--toggle-radius);
   margin: var(--toggle-space-between);
-  transition: 0.2s ease-in-out !important;
+  transition: 0.3s ease-in-out !important;
 }
 
 .notion-toggle:hover {
   background: var(--toggle-hover-bg);
+  outline: var(--toggle-hover-border);
 }
+
+
+/*Title*/
+.notion-toggle
+.notion-toggle__summary {
+  transition: 0.3s ease-in-out !important;
+}
+
+.notion-toggle:hover
+.notion-toggle__summary {
+  color: var(--toggle-hover-text);
+  transition: 0.3s ease-in-out !important;
+}
+
+
 
 /*----------------------*/
 
 
-/*OPEN - Toggle customization*/
+
+/*Heading Toggles*/
+.notion-toggle-heading-1 > .notion-toggle__summary,
+.notion-toggle-heading-2 > .notion-toggle__summary,
+.notion-toggle-heading-3 > .notion-toggle__summary {
+  margin-top: 0px !important;
+}
+
+
+
+/*----------------------*/
+
+/*Trigger*/
+.notion-toggle__trigger {
+  margin: 0px !important;
+}
+
+
+/*Trigger Open*/
 .notion-toggle.open {
   background: var(--toggle-open-bg);
   outline: var(--toggle-open-border);
+  padding-bottom: 40px !important;
 }
+
+
+
+/*----------------------*/
+
 
 
 /*Colorize arrow when open*/
@@ -63,11 +110,7 @@
 }
 
 
-/*----------------------*/
-
-
 /*Disable hover on the trigger*/
 .notion-toggle__trigger_icon:hover {
     background: none !important;
 }
-
