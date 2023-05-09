@@ -4,18 +4,31 @@
 
 :root {
   /*Colors*/
-  --list-bg: none !important;
-  --list-color: none !important;
-  --list-border: 1px solid #d4d4d4 !important;
+  --list-bg: #161616 !important;
+  --list-text: #ffffff !important;
+  --list-border: 2px solid #232323 !important;
   
   /*Space*/
-  --list-space-between: 0px !important;
-  --list-padding: 15px 10px !important;
-  --list-radius: 10px !important;
+  --list-space-between: 20px !important;
+  --list-padding: 15px 20px !important;
+  --list-radius: 8px !important;
   
   /*Others*/
   --list-title: bold !important; 
-  --list-hover: #efefef !important;
+  --list-title-size: 20px !important;
+  --list-icon: none !important;
+  /*Hide the icon = none*/
+  /*Show the icon = block*/
+  
+  
+  /*Others*/
+  --list-date-color: #ffffff !important;
+  
+  
+  /*Hover*/
+  --list-hover-bg: #282828  !important;
+  --list-hover-text: #fdb933 !important;
+  --list-hover-border: 2px solid #fdb933 !important;
 }
 
 
@@ -25,41 +38,52 @@
 .notion-collection-list {
   gap: var(--list-space-between) !important;
   padding: 0px !important;
-  border-top: var(--list-border) !important;
-  background: var(--list-bg) !important;
-  color: var(--list-color) !important;
+  border-top: none !important;
+  overflow: hidden !important;
+  padding-top: 10px !important;
 }
   
 /*Title weight*/
 .notion-collection-list
-.notion-property__title * {
+.notion-property__title 
+.notion-semantic-string {
   font-weight: var(--list-title) !important;
+  font-size: var(--list-title-size) !important;
+  
 }
 
-/*Others*/
+/*Disable icon*/
 .notion-collection-list__item
-.notion-property__title
-.notion-semantic-string > span {
-  border: 0px !important; }
+.notion-property__title__icon-wrapper {
+  display: var(--list-icon) !important;
+}
 
 
 /*----------------------*/
-
 
 
 /*Items*/
 .notion-collection-list__item {
+  background: var(--list-bg) !important;
+  color: var(--list-text) !important;
+  border-radius: var(--list-radius) !important;
   padding: var(--list-padding) !important; 
   margin: 0px !important;
-  border-top: none !important;
-  border-bottom: var(--list-border) !important;
-  border-radius: 0px !important;
+  border: var(--list-border) !important;
   transition: 0.3s ease-in-out !important;
 }
 
+
 /*Hover*/
 .notion-collection-list__item:hover {
-  background: var(--list-hover) !important;
+  background: var(--list-hover-bg) !important;
+  border: var(--list-hover-border) !important;
+}
+
+.notion-collection-list__item:hover
+.notion-property__title
+.notion-semantic-string > span {
+  color: var(--list-hover-text) !important;
 }
 
 
@@ -67,16 +91,92 @@
 /*----------------------*/
 
 
+/*Other properties*/
 
-/*Disable border bottom from first item*/
-.notion-collection-list__item:first-child {
-  border-bottom: var(--list-border) !important;
+/*Remove Title underline*/
+.notion-collection-list__item
+.notion-property__title
+.notion-semantic-string > span {
+  border: 0px !important;
 }
 
-/*Description text length*/
-.notion-collection-list__item-property
+
+/*Properties size and padding*/
+.notion-collection-list__item-property {
+  padding: 0px 10px !important;
+  font-size: 11pt !important;
+}
+
+/*Description property size and lenght*/
+.notion-collection-list__item-content
 .notion-property__text {
   max-width: 100% !important;
-  font-size: 1rem !important;
+  font-size: 12pt !important;
 }
+
+/*Remove person property right margin*/
+.notion-property__person >
+.notion-semantic-string > span {
+  margin-right: 0px !important;
+}
+
+/*Date color*/
+.notion-property .notion-semantic-string .date {
+    color: var(--list-date-color) ;
+    opacity: 50% !important;
+}
+
+
+
+
+/*------------------------------------*\
+   Responsive - Mobile
+\*------------------------------------*/
+
+@media only screen and (max-width: 900px) {
+
+/*List item padding*/
+.notion-collection-list__item {
+  padding: 20px !important;
+}
+
+
+
+/*Properties size and padding*/
+.notion-collection-list__item-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+}
+
+/*Remove Properties left padding*/
+.notion-collection-list__item-property {
+    padding: 0px 0px !important;
+    font-size: 11pt !important;
+}
+
+
+/*----------------------*/
+
+
+
+/*Display full title*/
+.notion-collection-list__item
+.notion-property.notion-property__title
+.notion-semantic-string > span {
+  white-space: normal !important;
+}
+
+
+
+/*Display full description text*/
+.notion-collection-list__item-property
+.notion-semantic-string {
+    white-space: normal !important;
+}
+
+
+
+} /*← Do not delete this*/
 
