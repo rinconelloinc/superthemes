@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="GMT-5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+    background-color: #171717;
+}
+
+#timer {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: bold;
+  font-size: .7em;
+  letter-spacing: 5px;
+}
+
+.days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 150px;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.days {
+  background: #1c1c1c;
+  border: 2px solid #2e2e2e;
+}
+
+.hours {
+  background: #1c1c1c;
+  border: 2px solid #2e2e2e;
+}
+
+.minutes {
+  background: #1c1c1c;
+  border: 2px solid #2e2e2e;
+}
+
+.seconds {
+  background: #1c1c1c;
+  border: 2px solid #2e2e2e;
+}
+
+.numbers {
+  font-family: 'Space Grotesk', sans-serif;
+  color:  #fdb933;
+  font-size: 4em;
+  text-align: center;
+}
+
+.white {
+  position: absolute;
+  background:  #eeeeee;
+  height: 85px;
+  width: 75px;
+  left: 30%;
+  top: 2%;
+}
+
+.red {
+  position: absolute;
+  background:  #EF2F3C;
+  left: 18%;
+  top: 9%;
+  height: 65px;
+  width: 70px;
+}
+
+.blue {
+  position: absolute;
+  background:  #276FBF;
+  height: 80px;
+  width: 80px;
+  left: 60%;
+  top: 5%;
+}
+
+</style>
+</head>
+
+
+<body>
+<div id="timer">
+
+    <div class="days"> 
+      <div id="days" class="numbers "> </div>days</div>
+      
+    <div class="hours"> 
+      <div  id="hours" class="numbers"> </div>hours</div> 
+      
+    <div class="minutes"> 
+      <div  id="minutes" class="numbers"> </div>minutes</div>
+      
+    <div   class="seconds"> 
+        <div id="seconds" class="numbers"> </div>seconds</div> 
+        
+    </div>
+</div>
+</body>
+
+
+<script>
+const year = new Date().getFullYear();
+const myDate = new Date('May 10, 2023 00:00:00');
+console.log(myDate);
+
+// countdown
+let timer = setInterval(function() {
+
+// get today's date
+  const today = new Date().getTime();
+
+// get the difference
+  const diff = myDate - today;
+
+// math
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+// display
+  document.getElementById("days").innerHTML=days
+  document.getElementById("hours").innerHTML=hours
+  document.getElementById("minutes").innerHTML=minutes
+  document.getElementById("seconds").innerHTML=seconds
+
+}, 1);
+</script>
+</html>
