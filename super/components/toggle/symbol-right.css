@@ -1,0 +1,138 @@
+/*
+Toggle Tabs - Symbol (Right)
+Author: Luis Rincon @rinconelloinc
+*/ 
+
+/*---------------------------------*\
+   Toggle Tabs - Symbol (Right)
+\*---------------------------------*/
+
+:root {
+  /*Closed Styling*/
+  --toggle-bg: #161616 !important;
+  --toggle-text: #ffffff !important;
+  --toggle-border: 0px solid #fdb933 !important;
+  --toggle-radius: 10px !important;
+
+
+  /*Open Styling*/
+  --toggle-open-bg: #282828 !important;
+  --toggle-open-text: #fdb933 !important;
+  --toggle-open-border: 0px solid #fdb933 !important;
+
+
+  /*Hover*/
+  --toggle-hover-bg: #282828 !important;
+  --toggle-hover-text: #fdb933 !important;
+  --toggle-hover-border: 3px solid #fdb933 !important;
+
+
+  /*Spacing*/
+  --toggle-padding:10px !important;
+  --toggle-space-between: 8px !important;
+}
+
+
+
+/*-------------------------------------*/
+
+
+
+/*Toggle Close - Styling*/
+.notion-toggle {
+  background: var(--toggle-bg);
+  color: var(--toggle-text);
+  padding: var(--toggle-padding);
+  border-radius: var(--toggle-radius);
+  margin: var(--toggle-space-between);
+  text-align: left !important;
+  position: relative !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+.notion-toggle:hover {
+  background: var(--toggle-hover-bg);
+  outline: var(--toggle-hover-border);
+}
+
+
+/*Toggle Open - Styling*/
+.notion-toggle.open {
+  background: var(--toggle-open-bg);
+  outline: var(--toggle-open-border);
+  padding-bottom: 40px !important;
+}
+
+
+/*----------------------*/
+
+
+
+/*Title*/
+.notion-toggle
+.notion-toggle__summary {
+  margin: 0 !important;
+  margin-left: 10px !important;
+  transition: 0.3s ease-in-out !important;
+}
+
+.notion-toggle:hover
+.notion-toggle__summary {
+  color: var(--toggle-hover-text);
+  transition: 0.3s ease-in-out !important;
+}
+
+
+/*----------------------*/
+
+
+/*Heading Toggles*/
+.notion-heading.toggle {
+    padding: 0px !important;
+}
+
+
+/*----------------------*/
+
+
+.notion-dropdown__menu-header,
+.notion-dropdown__option-icon,
+.notion-dropdown__button svg:first-of-type {
+    display: none !important; 
+}
+
+
+/*----------------------*/
+
+
+/*Hide default Trigger*/
+.notion-toggle__trigger {
+    display: none !important;
+}
+
+
+/*Closed Trigger*/
+.notion-toggle:before {
+  content: "+" !important;
+  position: absolute !important;
+  font-weight: 100 !important;
+  font-size: 24px !important;
+  line-height: 1 !important;
+  opacity: 50% !important;
+  top: 16px !important;
+  right: 20px !important;
+
+}
+
+/*Open Trigger*/
+.notion-toggle.open:before {
+    content: "-" !important;
+    position: absolute !important;
+    font-weight: 100 !important;
+    font-size: 24px !important;
+    line-height: 1 !important;
+    opacity: 50% !important;
+    top: 16px !important;
+    right: 20px !important;
+}
+
