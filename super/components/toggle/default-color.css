@@ -1,10 +1,10 @@
 /*
-Toggle Tabs
+Toggle Tabs - Default (Color)
 Author: Luis Rincon @rinconelloinc
 */ 
 
 /*---------------------------------*\
-   Toggle Tabs
+   Toggle Tabs - Default (Color)
 \*---------------------------------*/
 
 
@@ -39,13 +39,15 @@ Author: Luis Rincon @rinconelloinc
 
 
 
-/*Toggle - customization*/
+/*Toggle Close - Styling*/
 .notion-toggle {
   background: var(--toggle-bg);
   color: var(--toggle-text);
   padding: var(--toggle-padding);
   border-radius: var(--toggle-radius);
   margin: var(--toggle-space-between);
+  text-align: left !important;
+  position: relative !important;
   transition: 0.3s ease-in-out !important;
 }
 
@@ -55,9 +57,23 @@ Author: Luis Rincon @rinconelloinc
 }
 
 
+/*Toggle Open - Styling*/
+.notion-toggle.open {
+  background: var(--toggle-open-bg);
+  outline: var(--toggle-open-border);
+  padding-bottom: 40px !important;
+}
+
+
+/*----------------------*/
+
+
+
 /*Title*/
 .notion-toggle
 .notion-toggle__summary {
+  margin: 0 !important;
+  margin-left: 10px !important;
   transition: 0.3s ease-in-out !important;
 }
 
@@ -68,47 +84,38 @@ Author: Luis Rincon @rinconelloinc
 }
 
 
-
 /*----------------------*/
-
 
 
 /*Heading Toggles*/
-.notion-toggle-heading-1 > .notion-toggle__summary,
-.notion-toggle-heading-2 > .notion-toggle__summary,
-.notion-toggle-heading-3 > .notion-toggle__summary {
-  margin-top: 0px !important;
+.notion-heading.toggle {
+    padding: 0px !important;
 }
 
 
+/*----------------------*/
+
+
+.notion-dropdown__menu-header,
+.notion-dropdown__option-icon,
+.notion-dropdown__button svg:first-of-type {
+    display: none !important; 
+}
+
 
 /*----------------------*/
+
 
 /*Trigger*/
 .notion-toggle__trigger {
   margin: 0px !important;
 }
 
-
-/*Trigger Open*/
-.notion-toggle.open {
-  background: var(--toggle-open-bg);
-  outline: var(--toggle-open-border);
-  padding-bottom: 40px !important;
-}
-
-
-
-/*----------------------*/
-
-
-
 /*Colorize arrow when open*/
   .notion-toggle.open
   .notion-toggle__trigger {
   color: var(--toggle-open-text);
 }
-
 
 /*Disable hover on the trigger*/
 .notion-toggle__trigger_icon:hover {
