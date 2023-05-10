@@ -31,8 +31,8 @@
   --gallery-text-align: left !important;
   --gallery-text-size: 9.5pt !important;
   --gallery-text-position: block !important;
-  /*Display: block = Align to top*/
-  /*Display: flex = Align to center*/
+  /*Align to top = block*/
+  /*Align to center = flex*/
   
   
   /*Overlay*/
@@ -150,8 +150,8 @@
   padding: var(--gallery-overlay-padding) !important;
   margin: auto !important;
   display: var(--gallery-text-position) !important;
-  /*Display: block = Align to top*/
-  /*Display: flex = Align to center*/
+  /*Align to top = block*/
+  /*Align to center = flex*/
 }
 
 
