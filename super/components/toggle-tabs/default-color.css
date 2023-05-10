@@ -29,7 +29,7 @@ Author: Luis Rincon @rinconelloinc
 
 
   /*Spacing*/
-  --toggle-padding:10px !important;
+  --toggle-padding: 10px !important;
   --toggle-space-between: 8px !important;
 }
 
@@ -41,26 +41,26 @@ Author: Luis Rincon @rinconelloinc
 
 /*Toggle Close - Styling*/
 .notion-toggle {
-  background: var(--toggle-bg);
-  color: var(--toggle-text);
-  padding: var(--toggle-padding);
-  border-radius: var(--toggle-radius);
-  margin: var(--toggle-space-between);
+  background: var(--toggle-bg) !important;
+  color: var(--toggle-text) !important;
+  padding: var(--toggle-padding) !important;
+  border-radius: var(--toggle-radius) !important;
+  margin: var(--toggle-space-between) !important;
   text-align: left !important;
   position: relative !important;
   transition: 0.3s ease-in-out !important;
 }
 
 .notion-toggle:hover {
-  background: var(--toggle-hover-bg);
-  outline: var(--toggle-hover-border);
+  background: var(--toggle-hover-bg) !important;
+  outline: var(--toggle-hover-border) !important;
 }
 
 
 /*Toggle Open - Styling*/
 .notion-toggle.open {
-  background: var(--toggle-open-bg);
-  outline: var(--toggle-open-border);
+  background: var(--toggle-open-bg) !important;
+  outline: var(--toggle-open-border) !important;
   padding-bottom: 40px !important;
 }
 
@@ -79,7 +79,7 @@ Author: Luis Rincon @rinconelloinc
 
 .notion-toggle:hover
 .notion-toggle__summary {
-  color: var(--toggle-hover-text);
+  color: var(--toggle-hover-text) !important;
   transition: 0.3s ease-in-out !important;
 }
 
@@ -114,7 +114,7 @@ Author: Luis Rincon @rinconelloinc
 /*Colorize arrow when open*/
   .notion-toggle.open
   .notion-toggle__trigger {
-  color: var(--toggle-open-text);
+  color: var(--toggle-open-text) !important;
 }
 
 /*Disable hover on the trigger*/
