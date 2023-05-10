@@ -1,0 +1,188 @@
+/*------------------------------------*\
+   Gallery with Text overlay
+\*------------------------------------*/
+
+:root {
+  
+  /*Cards*/
+  --galleryTTO-card-size: 300px !important;
+  --galleryTTO-card-bg: #161616 !important;
+  --galleryTTO-card-text: #8a8a8a !important;
+  --galleryTTO-card-border: none !important;
+  --galleryTTO-card-radius: 10px !important;
+  --galleryTTO-card-padding: 10px !important;
+  --galleryTTO-card-shadow: none !important;
+  
+  
+  /*Cover Image*/
+  --galleryTTO-cover-radius: 5px !important;
+  --galleryTTO-cover-fill: unset !important;
+  /*Show card content = position: relative*/
+  /*Hide card content = position: unset*/
+  
+  /*Title + Icons*/
+  --galleryTTO-title-weight: bold !important;
+  --galleryTTO-icon-display: none !important;
+  /*Show icon = display: block*/
+  /*Hide icon = display: none*/
+  
+  
+  /*Description text*/
+  --galleryTTO-text-color: #ffffff !important;
+  --galleryTTO-title-align: left !important;
+  --galleryTTO-text-size: 15pt !important;
+  --galleryTTO-text-position: center !important;
+  /*Display: flex-start = Align to top*/
+  /*Display: center = Align to center*/
+  /*Display: flex-end = Align to bottom*/
+  
+  
+  /*Overlay*/
+  --galleryTTO-overlay-bg: rgba(28, 28, 28, 80%) !important;
+  --galleryTTO-overlay-padding: 30px 30px 30px 30px !important;
+}
+
+
+
+/*----------------------*/
+
+
+
+/*Increase the size of grid columns*/
+.notion-collection-gallery {
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr)) !important;
+  height: var(--galleryTTO-card-size) !important;
+}
+
+@media only screen and (max-width: 1000px) {
+
+.notion-collection-gallery {
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+  height: 100% !important;
+}
+
+
+
+} /*← Do not delete this*/
+
+
+/*------------------------------------*\
+   Cards
+\*------------------------------------*/
+
+/*Main Gallery Card*/
+.notion-collection-card {
+  background: var(--galleryTTO-card-bg) !important;
+  color: var(--galleryTTO-card-text) !important;
+  border: var(--galleryTTO-card-border) !important;
+  border-radius: var(--galleryTTO-card-radius) !important;
+  padding: var(--galleryTTO-card-padding) !important;
+  box-shadow: var(--galleryTTO-card-shadow) !important;
+  
+  overflow: hidden !important;
+  transition: 0.4s ease-in-out !important;
+}
+
+
+
+
+/*------------------------------------*\
+   Cover Image
+\*------------------------------------*/
+
+
+/*Cover Image size*/
+.notion-collection-card__cover {
+  border-radius: var(--galleryTTO-cover-radius) !important;
+  position: var(--galleryTTO-cover-fill) !important;
+  /*Show card content = position: relative*/
+  /*Hide card content = position: unset*/
+}
+
+
+
+
+/*------------------------------------*\
+   Title + Icons
+\*------------------------------------*/
+
+
+/*Title Styling*/
+.notion-property__title
+.notion-semantic-string {
+    font-weight: var(--galleryTTO-title-weight) !important;
+}
+
+/*Fix Title Space on card*/
+.notion-collection-card__content {
+    padding: 1px !important;
+}
+
+
+
+
+
+/*Hide icon*/
+.notion-property__title__icon-wrapper {
+  display: var(--galleryTTO-icon-display) !important;
+}
+
+
+/*------------------------------------*\
+   Description Text
+\*------------------------------------*/
+
+
+/*Text*/
+.notion-collection-card.gallery
+.notion-property__title
+.notion-semantic-string {
+  line-height: 1.3 !important;
+  text-align: var(--galleryTTO-title-align) !important;
+  color:  var(--galleryTTO-text-color) !important;
+}
+
+
+.notion-collection-card .notion-property__title {
+
+
+}
+
+
+/*------------------------------------*\
+   Overlay
+\*------------------------------------*/
+
+
+/*Overlay Styling*/
+.notion-collection-card
+.notion-property__title {
+  position: absolute !important;
+  font-size: var(--galleryTTO-text-size) !important; 
+  left: 0px !important;
+  top: 0px !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: var(--galleryTTO-overlay-bg) !important;
+  padding: var(--galleryTTO-overlay-padding) !important;
+  margin: auto !important;
+  align-items: var(--galleryTTO-text-position) !important;
+  /*Display: flex-start = Align to top*/
+  /*Display: center = Align to center*/
+  /*Display: flex-end = Align to bottom*/
+}
+
+
+/*Animation*/
+.notion-collection-card
+.notion-property__title {
+  transition: 0.40s ease-in-out !important; /* ← Overlay timing*/
+  opacity: 0% !important;
+}
+
+
+/*Hover*/
+.notion-collection-card:hover
+.notion-property__title {
+  opacity: 100% !important;
+}
