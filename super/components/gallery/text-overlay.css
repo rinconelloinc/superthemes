@@ -30,7 +30,7 @@
   --gallery-text-color: #ffffff !important;
   --gallery-text-align: left !important;
   --gallery-text-size: 9.5pt !important;
-  --gallery-text-align: block !important;
+  --gallery-text-position: block !important;
   /*Display: block = Align to top*/
   /*Display: flex = Align to center*/
   
@@ -149,7 +149,7 @@
   background: var(--gallery-overlay-bg);
   padding: var(--gallery-overlay-padding) !important;
   margin: auto !important;
-  display: var(--gallery-text-align) !important;
+  display: var(--gallery-text-position) !important;
   /*Display: block = Align to top*/
   /*Display: flex = Align to center*/
 }
