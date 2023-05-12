@@ -28,7 +28,9 @@ Author: Luis Rincon @rinconelloinc
 --db-views-active-background: #1c1c1c !important;
 --db-views-active-text: #fdb933 !important;
 --db-views-active-border: 2px solid #fdb933 !important;
+   
 --db-views-active-text-mobile: #fdb933 !important;
+--db-views-hover-text-mobile: #fdb933 !important;
 
    
 /*Hover*/
@@ -348,7 +350,7 @@ Author: Luis Rincon @rinconelloinc
 
 .notion-dropdown__option:hover {
   transition: 0.2s ease-in-out;
-  color: var(--db-views-hover-text);
+  color: var(--db-views-hover-text-mobile) !important;
   background: none !important;
   border: none !important;
   opacity: 100%;
