@@ -28,6 +28,7 @@ Author: Luis Rincon @rinconelloinc
 --db-views-active-background: #1c1c1c !important;
 --db-views-active-text: #fdb933 !important;
 --db-views-active-border: 2px solid #fdb933 !important;
+--db-views-active-text-mobile: #fdb933 !important;
 
    
 /*Hover*/
@@ -366,7 +367,7 @@ Author: Luis Rincon @rinconelloinc
 .notion-collection__header-wrapper .notion-dropdown__menu .notion-dropdown__option.active p {
   background: none !important;
   border: none !important;
-  color: var(--db-views-active-text);
+  color: var(--db-views-active-text-mobile) !important;
 }
 
 
