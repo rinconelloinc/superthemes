@@ -49,6 +49,7 @@ Author: Luis Rincon @rinconelloinc
   text-align: left !important;
   position: relative !important;
   transition: 0.3s ease-in-out !important;
+  outline: var(--toggle-border) !important;
 }
 
 .notion-toggle:hover {
