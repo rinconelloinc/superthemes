@@ -24,7 +24,7 @@ Author: Luis Rincon @rinconelloinc
   /*Hover*/
   --toggle-hover-bg: #282828 !important;
   --toggle-hover-text: #fdb933 !important;
-  --toggle-hover-border: 3px solid #fdb933 !important;
+  --toggle-hover-border: 0px solid #fdb933 !important;
 
 
   /*Spacing*/
@@ -48,6 +48,7 @@ Author: Luis Rincon @rinconelloinc
   text-align: left !important;
   position: relative !important;
   transition: 0.3s ease-in-out !important;
+  outline: var(--toggle-border) !important;
 }
 
 .notion-toggle:hover {
