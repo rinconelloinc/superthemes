@@ -239,6 +239,11 @@ body {
     overflow-x: hidden !important;
 }
 
+.notion-callout .notion-callout__content > span {
+  display: none;
+}
+
+
 
 /*Default Callouts → White*/
 
